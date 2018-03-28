@@ -1,7 +1,7 @@
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'URWGeometric-Medium', sans-serif;
   color: #555555;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 300;
   line-height: 22px;
   position: relative;
@@ -15,6 +15,7 @@ body {
 p,
 dt,
 dd {
+  font-family: 'URWGeometric-Medium';
   font-size: 14px;
   @media (min-width: $screen-lg-desktop) {
     font-size: 16px;
@@ -22,12 +23,16 @@ dd {
   }
 }
 
-h1,
+h1 {
+  font-family: 'URWGeometric-Extrabold';
+}
+
 h2,
 h3,
 h4,
 h5,
 h6 {
+  font-family: 'URWGeometric-Semibold';
   color: $heading;
 }
 
@@ -84,7 +89,8 @@ img {
 
 // Inner pages  general styles
 .inner-banner {
-  background: url('/assets/images/inner-banner-bg.jpg') repeat-x center center;
+  // background: url('/assets/images/inner-banner-bg.jpg') repeat-x center center;
+  background-color: #FFF;
   padding: 20px 0;
   position: relative;
   .banner-content {
@@ -98,7 +104,7 @@ img {
   }
   .caption {
     font-size: 17px;
-    color: #fff;
+    color: #333;
     font-weight: 400;
     text-transform: uppercase;
     margin: 0;
@@ -109,7 +115,7 @@ img {
   .subcaption {
     font-size: 14px;
     display: block;
-    color: #fff;
+    color: #333;
     @media (min-width: $screen-tablet) {
       font-size: 16px;
       margin-bottom: 0;
