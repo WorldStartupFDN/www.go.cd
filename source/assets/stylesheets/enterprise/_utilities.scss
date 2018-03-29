@@ -1,0 +1,60 @@
+// All the Utility classes go here
+// For Example : button general Styling, Margins, Text Styling for header, Paragraph
+// All the styling are written as Sass generators which can be extended
+
+// Guidelines to add further styles: 
+// 1. Follow alphabetical order in the writing styles
+// 2. Nest the style's in if only required at most
+// 3. Use more generic classnames
+// 4. Follow BEM model in writing styles
+
+@import 'enterprise/enterprise_variables';
+
+%button{
+  border-radius: 2px;
+  margin: 0.5em; 
+  text-align: center;
+}
+
+.button-large-light{
+  @extend %button;
+  background: $light;
+  border: 2px solid $dark-button-color;
+  height: 4em;
+  width: 20em;
+}
+
+.button-large-dark{
+  @extend %button;
+  background: $dark-button-color;
+  border: 2px solid $dark-button-color;
+  height: 4em;
+  width: 20em;
+}
+
+.banner-title{
+  font-family: $default-font-extra-bold;
+  font-size: 5em;
+  font-weight: bold;
+  line-height: 0.9em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.header-large{
+  font-family: $default-font-extra-bold;
+  text-align: center;
+}
+
+.header-medium{
+  font-family: $default-font-normal-bold;
+}
+
+.text-normal{
+  font-family: $default-font-normal;
+}
+
+.highlight {
+  color: #4ad9d9;
+}
+
