@@ -1,41 +1,36 @@
 <div class="enterprise-overview">
     <%= partial 'partials/secondarynav' %>
     <div class="header">
-      <div class="container">
-        <div class="col-md-10 col-md-offset-1">
+      <div class="content-container">
+        <div class="header-container">
           <h1>CONTINUOUS DELIVERY SCALED FOR<br/>YOUR <span class="highlight">ENTERPRISE</span></h1>
         </div>
       </div>
     </div>
 
-    <div class="feature-section">
-      <div class="container">
-        <div class="row">
-          <h1>Enterprise Plugins and Professional Support </h1>
-        </div>
-
-        <div class="row feature-row">
-
-          <div class="col-md-4 feature">
-            <h3>Fits Into Your Ecosystem</h3>
-            <%= image_tag "campaign/enterprise/business.svg", {:title => "Fits Into Your Ecosystem", :alt => "Ecosystem illustration", :class => 'illo'} %>
+    <div>
+      <div class="content-container">
+          <h1 class="header-large">Enterprise Plugins and Professional Support </h1>
+        <div>
+          <div class="content-card-three-column">
+            <h3 class="text-center">Fits Into Your Ecosystem</h3>
+            <%= image_tag "campaign/enterprise/business.svg", {:title => "Fits Into Your Ecosystem", :alt => "Ecosystem illustration", :class => 'illo img-container'} %>
             <p>GoCD provides integrations that fit into your enterprise IT ecosystem. Use GoCD with your existing SCM, authorization system and cloud infrastructure.</p>
           </div>
 
 
-          <div class="col-md-4 feature">
-            <h3>Continuous Delivery at Scale</h3>
-             <%= image_tag "campaign/enterprise/postgres.svg", {:title => "Continuous Delivery at Scale", :alt => "CD illustration", :class => 'illo'} %>
+          <div class="content-card-three-column">
+            <h3 class="text-center">Continuous Delivery at Scale</h3>
+             <%= image_tag "campaign/enterprise/postgres.svg", {:title => "Continuous Delivery at Scale", :alt => "CD illustration", :class => 'illo img-container'} %>
              <p>GoCD's commercial extensions provide performance upgrades for the substantial number of pipelines and agents required in an enterprise, as well as features to help you manage large number of teams, agents and pipelines.</p>
           </div>
 
-          <div class="col-md-4 feature">
-            <h3>Professional Support</h3>
-            <%= image_tag "campaign/enterprise/support.svg", {:title => "Professional Support", :alt => "Chat illustration", :class => 'illo'} %>
+          <div class="content-card-three-column">
+            <h3 clas="text-center">Professional Support</h3>
+            <%= image_tag "campaign/enterprise/support.svg", {:title => "Professional Support", :alt => "Chat illustration", :class => 'illo img-container'} %>
             <p>Get access to both our Support team and GoCD's development team via unlimited support cases per month. Get notifications for all bug fixes, security patches, and upgrades.</p>
           </div>
         </div>
-
       </div>
     </div>
 

@@ -10,6 +10,8 @@
 
 @import 'enterprise/enterprise_variables';
 
+
+
 %button{
   border-radius: 2px;
   margin: 0.5em; 
@@ -54,12 +56,43 @@
   font-family: $default-font-normal;
 }
 
+.text-center{
+  text-align: center;
+}
+
 .highlight {
   color: #4ad9d9;
 }
 
-.header-row{
-  width: 90%;
+.header-container{
+  @include grid-column(10);
+  margin: 0 auto;
+  margin-left: 10%;
+}
+
+.content-container{
   display: block;
   margin: 0 auto;
+  width: 80%;
+}
+
+.content-card-three-column{
+  @include grid-column(1, $three-column);
+  
+  @media (max-width: $screen-tablet){
+    @include grid-column(1, $single-column);  
+  }
+}
+
+.content-card-four-column{
+  @media (max-width: $screen-tablet){
+    @include grid-column(1, $single-column);  
+  }
+  @include grid-column(1, $four-column);
+}
+
+.img-container{
+  display: block;
+  margin: 0 auto;
+  width: 80%;
 }

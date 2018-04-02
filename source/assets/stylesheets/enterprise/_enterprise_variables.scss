@@ -15,3 +15,22 @@ $light: #FFFFFF;
 $default-font-extra-bold: 'URWGeometric-ExtraBold';
 $default-font-normal-bold: 'URWGeometric-Semibold';
 $default-font-normal: 'URWGeometric-Medium';
+
+// custom grid columns
+
+$three-column: (
+  columns: 3,
+  gutter: 10px,
+  media: 1200px
+);
+
+$four-column: (
+  columns: 4,
+  gutter: 10px,
+  media: 1200px
+);
+
+$single-column: (
+  columns: 1,
+  gutter: 10px,
+);
