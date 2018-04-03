@@ -10,6 +10,7 @@ $dark-primary: #25282D;
 $dark-secondary: #1B1D21;
 $dark-button-color:  #1C425C;
 $light: #FFFFFF;
+$dark: #000;
  
 //Font Styles
 $default-font-extra-bold: 'URWGeometric-ExtraBold';
@@ -26,6 +27,12 @@ $three-column: (
 
 $four-column: (
   columns: 4,
+  gutter: 10px,
+  media: 1200px
+);
+
+$six-column: (
+  columns: 2,
   gutter: 10px,
   media: 1200px
 );

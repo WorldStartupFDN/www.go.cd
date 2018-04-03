@@ -1,20 +1,20 @@
 <div class="enterprise">
     <%= partial 'partials/secondarynav' %>
-    <div class="container feature-section">
-      <h1>ADD-ONS</h1>
-      <p class="text-center">
+    <div class="content-container p-t-3">
+      <h1 class="text-center">ADD-ONS</h1>
+      <p class="text-center content-container">
         Our enterprise plugins extend the functionality of GoCD to help address the needs of your organization. Increase
         your productivity, decrease your downtime, and save resources with GoCD's commercial extensions.
       </p>
     </div>
 
-    <div class="container intro-section">
+    <div class="content-container intro-section">
       <div class="row intro-row">
-        <div class="col-md-6">
-          <%= image_tag "campaign/enterprise/ui_illo_commercial_2.svg", {:title => "GoCD illustration", :alt => "GoCD Value Stream Map"} %>
+        <div class="content-card-six-column">
+          <img src="http://via.placeholder.com/600x300" class="img-container">
         </div>
-        <div class="col-md-6 intro-text">
-          <h1>Analytics Plugin</h1>
+        <div class="content-card-six-column intro-text">
+          <h1 class="text-center">Analytics Plugin</h1>
           <p>
             The GoCD Enterprise Analytics Plugin provides actionable insights about your release workflow, pipeline
             status and infrastruture utilization. You can easily identify and remove bottlenecks and optimize resources
@@ -30,28 +30,28 @@
       </div>
     </div>
 
-    <div class="container feature-section">
-      <div class="col-md-6">
-        <h2> PostgreSQL</h2>
-        <p>
+    <div class="content-container">
+      <div class="content-card-six-column">
+        <h2 class="text-center"> PostgreSQL</h2>
+        <p class="content-container">
           GoCD's OSS distribution uses an embedded database. That's great for getting started. But, if you need to scale
           beyond a few teams and several pipelines, our PostgreSQL add-on gives you the performance upgrade necessary
           for hundreds of pipelines and agents. We recommend PostgreSQL for critical deployments.
         </p>
       </div>
 
-      <div class="col-md-6">
-        <h2> Business Continuity</h2>
-        <p>
+      <div class="content-card-six-column">
+        <h2 class="text-center"> Business Continuity</h2>
+        <p class="content-container">
           Hard drives fail. This add-on helps ensure you can deliver even when your machine is down. With business
           continuity, you’ll be able to set up secondary GoCD and PostgreSQL servers to protect against downtime.
           Automatic redirection of build agents and the ability to store artifacts on network drives is supported.
         </p>
       </div>
 
-      <div class="col-md-6">
-        <h2>Amazon ECS Elastic Agent Plugin</h2>
-        <p>
+      <div class="content-card-six-column">
+        <h2 class="text-center">Amazon ECS Elastic Agent Plugin</h2>
+        <p class="content-container">
           This Elastic Agent Plugin for Amazon EC2 Container Service gives you the flexibility to autoscale your builds
           on docker instances running on an ECS cluster. It tailors your use of EC2 instances (with support for Docker
           containers) specific to your needs, by taking care of creating agents &amp; scheduling builds while monitoring the
@@ -59,14 +59,14 @@
         </p>
       </div>
 
-      <div class="col-md-6">
-        <h2>LDAP/AD Authorization Plugin</h2>
-        <p>
+      <div class="content-card-six-column">
+        <h2 class="text-center">LDAP/AD Authorization Plugin</h2>
+        <p class="content-container">
           The LDAP/AD Authorization Plugin provides both authentication and authorization services for GoCD. Grant
           relevant access to your teams by leveraging your organizations' predefined roles within LDAP/AD. Manage users
           and roles centrally (LDAP), while using GoCD to define and maintain application specific role based access.
         </p>
       </div>
     </div>
-    <button class="btn btn-lg btn-default btn-center">CONTACT US TO GET STARTED</button>
 </div>
+<button class="button-brand">CONTACT US TO GET STARTED</button>

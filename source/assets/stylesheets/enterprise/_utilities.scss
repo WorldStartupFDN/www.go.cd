@@ -71,9 +71,15 @@
 }
 
 .content-container{
+  box-sizing: border-box;
   display: block;
-  margin: 0 auto;
-  width: 80%;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 100%;
+
 }
 
 .content-card-three-column{
@@ -91,8 +97,79 @@
   @include grid-column(1, $four-column);
 }
 
+.content-card-six-column{
+  @media (max-width: $screen-tablet){
+    @include grid-column(1, $single-column);  
+  }
+  @include grid-column(1, $six-column);
+}
+
 .img-container{
   display: block;
   margin: 0 auto;
   width: 80%;
+}
+
+.secondarynav{
+  background: $dark-primary;
+  border-top: 1px solid #9FA0A3;
+  border-bottom: 1px solid #9FA0A3;
+  position: fixed;
+  width: 100%;
+  z-index: 11;
+
+  .level0{
+    display: flex;
+    margin: 0 auto;
+    list-style: none;
+    padding: 10px;
+    width: 70%;
+    justify-content: space-around;
+
+    li{
+      a{
+        color: $light;
+        font-family: $default-font-extra-bold;
+        font-size: 18px;
+        padding: 10px; 
+        transition: all 0.25s;
+
+        &:hover{
+          color: $brand-secondary;
+        }
+        
+      }
+    }
+  }
+} 
+
+.button-brand{ 
+  background: $brand-secondary;
+  color: $dark;
+  display: block;
+  font-family: $default-font-normal-bold;
+  font-size: 22px;
+  height: 37px;
+  line-height: 0.2;
+  margin: 0 auto;
+  padding: 20px;
+  text-transform: uppercase;
+  width: 424px;
+}
+.p-t-3{
+  padding-top: 3%;
+}
+.custom-table{
+  width: 100%;
+  max-width: 100%;
+  
+  tbody {
+    tr:nth-child(odd){
+      background: #f9f9f9;
+    }
+    td{
+      padding: 10px;
+      vertical-align: middle;
+    }
+  }
 }

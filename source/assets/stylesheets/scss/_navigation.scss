@@ -4,7 +4,7 @@ $navbutton: #fff;
 $nav-link: #fff;
 $nav-link-hover-bg: $primary-color;
 $menu-color: #fff;
-$secondary-nav-color: #8a8686;
+$secondary-nav-color: #25282D;
 
 .top .navbtn {
   float: right;
@@ -400,34 +400,6 @@ ul.level1 {
   }
 
 }
-
-.secondarynav{
-  background: $secondary-nav-color;
-  position: fixed;
-  width: 100%;
-  z-index: 11;
-  .level0{
-    display: flex;
-    margin: 0 auto;
-    list-style: none;
-    padding: 10px;
-    width: 70%;
-    justify-content: space-around;
-
-    li{
-      a{
-        color: #fff;
-        transition: all 0.25s;
-        padding: 10px;
-
-        &:hover{
-          border-bottom: 3px solid #fff;
-        }
-        
-      }
-    }
-  }
-} 
 
 .mobile-nav{
   display: block;
