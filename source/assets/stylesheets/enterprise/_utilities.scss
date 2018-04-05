@@ -45,7 +45,10 @@
 
 .header-large{
   font-family: $default-font-extra-bold;
+  padding-top:  20px;
+  padding-bottom: 20px;
   text-align: center;
+
 }
 
 .header-medium{
@@ -68,6 +71,12 @@
   @include grid-column(10);
   margin: 0 auto;
   margin-left: 10%;
+  
+  @media(max-width: $screen-tablet){
+    @include grid-column(12);
+    float: none;
+    margin: 0 auto;
+  }
 }
 
 .content-container{
@@ -76,10 +85,25 @@
   height: auto;
   margin-right: auto;
   margin-left: auto;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: $container_padding_tablet_desktop;
+  padding-right: $container_padding_tablet_desktop;
   width: 100%;
 
+  @media (max-width: $screen-tablet){
+    padding-left: $container_padding_mobile;
+    padding-right: $container_padding_mobile;
+  }
+  @media(min-width: 1200px){
+    padding-left: $container_padding_xl_desktop;
+    padding-right: $container_padding_xl_desktop;
+  }
+
+}
+
+.grid-container{
+  @include grid-container;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 .content-card-three-column{
@@ -110,6 +134,9 @@
   width: 80%;
 }
 
+.img-rounded{
+  border-radius: 50%;
+}
 .secondarynav{
   background: $dark-primary;
   border-top: 1px solid #9FA0A3;
@@ -155,10 +182,15 @@
   padding: 20px;
   text-transform: uppercase;
   width: 424px;
+
+  @media(max-width: $screen-tablet){
+    font-size: 12px; 
+    width: 200px;
+    margin-bottom: 2em;
+  }
 }
-.p-t-3{
-  padding-top: 3%;
-}
+
+
 .custom-table{
   width: 100%;
   max-width: 100%;
@@ -172,4 +204,20 @@
       vertical-align: middle;
     }
   }
+}
+
+.content-card{
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+
+  .content-card-title{
+    font-family: $default-font-normal-bold;
+    font-size: 28px;
+
+    @media( max-width: $screen-tablet){
+      font-size: 22px;
+    }
+   } 
+
 }

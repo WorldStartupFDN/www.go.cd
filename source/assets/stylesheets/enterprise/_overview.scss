@@ -3,10 +3,10 @@
   // Global page elements
 
   h1 {
-    font-family: 'URWGeometric-Semibold';
+    font-family: $default-font-extra-bold;
 
     .highlight {
-      color: #4ad9d9;
+      color: $brand-secondary;
     }
   }
 
@@ -36,20 +36,25 @@
   //Banner
 
   .header {
-    margin-bottom: 1em;
-    background: url("../../assets/images/campaign/enterprise/ccoal_bkgd.jpg");
+    align-items: center;
     background-size: cover;
-    height: 400px;
-    width: 100%;
+    background: url("../../assets/images/campaign/enterprise/ccoal_bkgd.jpg");
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    margin-bottom: 1em;
+    margin-top: 1em;
     position: static;
     top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 100%;
+
+    @media(max-width: $screen-tablet){
+      margin-top: 0;
+    }
 
     h1 {
-      color: #FFFFFF;
-      font-family: 'URWGeometric-ExtraBold';
+      color: $light;
+      font-family: $default-font-extra-bold;
       font-size: 5em;
       line-height: .9em;
       text-align: center;
@@ -59,9 +64,35 @@
       height: 300px;
 
       h1 {
-        font-size: 3em;
+        font-size: 2.5em;
       }
     }
 
   }
+}
+.content-card{
+  img{
+    width: 50%;
+  }
+
+  @media (max-width: $screen-tablet){
+    width: 100%;
+
+    .content-card-title{
+      margin-left: 20%; 
+      text-align: left;
+      width: 75%;
+    }
+
+    img{
+      display: inline-block;
+      vertical-align: top;
+      width: 20%;
+    }
+    p{
+      display: inline-block;
+      width: 75%;
+    }
+  }
+ 
 }
