@@ -1,20 +1,23 @@
 <div class="enterprise">
     <%= partial 'partials/secondarynav' %>
-    <div class="content-container p-t-3">
+    <div class="content-container header-padding">
       <h1 class="text-center">ADD-ONS</h1>
       <p class="text-center content-container">
         Our enterprise plugins extend the functionality of GoCD to help address the needs of your organization. Increase
         your productivity, decrease your downtime, and save resources with GoCD's commercial extensions.
       </p>
+      <a href="#" class="text-center default-link-text"> View all Plugins</a>
+      <hr class="mobile-border"/>
     </div>
-
-    <div class="content-container intro-section">
-      <div class="row intro-row">
+    
+    <div class="content-container">
+      <div class="grid-container">
+        <h2 class="text-center display-mobile mobile-header">Actionable CD Metrics At Your Fingertips</h2>
         <div class="content-card-six-column">
           <img src="http://via.placeholder.com/600x300" class="img-container">
         </div>
-        <div class="content-card-six-column intro-text">
-          <h1 class="text-center">Analytics Plugin</h1>
+        <div class="content-card-six-column">
+          <h2 class="text-center display-desktop">Actionable CD Metrics At Your Fingertips</h2>
           <p>
             The GoCD Enterprise Analytics Plugin provides actionable insights about your release workflow, pipeline
             status and infrastruture utilization. You can easily identify and remove bottlenecks and optimize resources
@@ -30,9 +33,11 @@
       </div>
     </div>
 
-    <div class="content-container">
+    <hr class="mobile-border" />
+
+    <div class="grid-container content-container">
       <div class="content-card-six-column">
-        <h2 class="text-center"> PostgreSQL</h2>
+        <h2 class="text-center mobile-section-title"> PostgreSQL</h2>
         <p class="content-container">
           GoCD's OSS distribution uses an embedded database. That's great for getting started. But, if you need to scale
           beyond a few teams and several pipelines, our PostgreSQL add-on gives you the performance upgrade necessary
@@ -41,7 +46,7 @@
       </div>
 
       <div class="content-card-six-column">
-        <h2 class="text-center"> Business Continuity</h2>
+        <h2 class="text-center mobile-section-title"> Business Continuity</h2>
         <p class="content-container">
           Hard drives fail. This add-on helps ensure you can deliver even when your machine is down. With business
           continuity, you’ll be able to set up secondary GoCD and PostgreSQL servers to protect against downtime.
@@ -50,7 +55,7 @@
       </div>
 
       <div class="content-card-six-column">
-        <h2 class="text-center">Amazon ECS Elastic Agent Plugin</h2>
+        <h2 class="text-center mobile-section-title">Amazon ECS Elastic Agent Plugin</h2>
         <p class="content-container">
           This Elastic Agent Plugin for Amazon EC2 Container Service gives you the flexibility to autoscale your builds
           on docker instances running on an ECS cluster. It tailors your use of EC2 instances (with support for Docker
@@ -60,13 +65,15 @@
       </div>
 
       <div class="content-card-six-column">
-        <h2 class="text-center">LDAP/AD Authorization Plugin</h2>
+        <h2 class="text-center mobile-section-title">LDAP/AD Authorization Plugin</h2>
         <p class="content-container">
           The LDAP/AD Authorization Plugin provides both authentication and authorization services for GoCD. Grant
           relevant access to your teams by leveraging your organizations' predefined roles within LDAP/AD. Manage users
           and roles centrally (LDAP), while using GoCD to define and maintain application specific role based access.
         </p>
       </div>
+
     </div>
+
+    <button class="button-brand">CONTACT US TO GET STARTED</button>
 </div>
-<button class="button-brand">CONTACT US TO GET STARTED</button>

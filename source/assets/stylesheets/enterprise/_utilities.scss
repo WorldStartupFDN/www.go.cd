@@ -92,6 +92,7 @@
   @media (max-width: $screen-tablet){
     padding-left: $container_padding_mobile;
     padding-right: $container_padding_mobile;
+    padding-top: 2 * $container_padding_mobile;
   }
   @media(min-width: 1200px){
     padding-left: $container_padding_xl_desktop;
@@ -103,7 +104,7 @@
 .grid-container{
   @include grid-container;
   margin-top: 2em;
-  margin-bottom: 2em;
+  padding-bottom: 20px;
 }
 
 .content-card-three-column{
@@ -130,13 +131,19 @@
 
 .img-container{
   display: block;
-  margin: 0 auto;
+  margin: 20px auto;
   width: 80%;
 }
 
 .img-rounded{
   border-radius: 50%;
 }
+
+.img-rounded__bordered{
+  border-radius: 50%;
+  border: 2px solid $mobile-border-color;
+}
+
 .secondarynav{
   background: $dark-primary;
   border-top: 1px solid #9FA0A3;
@@ -179,14 +186,16 @@
   height: 37px;
   line-height: 0.2;
   margin: 0 auto;
+  margin-top: 2em;
   padding: 20px;
   text-transform: uppercase;
   width: 424px;
 
   @media(max-width: $screen-tablet){
     font-size: 12px; 
-    width: 200px;
     margin-bottom: 2em;
+    margin-top: 2em;
+    width: 200px;
   }
 }
 
@@ -194,7 +203,11 @@
 .custom-table{
   width: 100%;
   max-width: 100%;
-  
+
+  th{
+    text-transform: uppercase;
+  }
+
   tbody {
     tr:nth-child(odd){
       background: #f9f9f9;
@@ -204,6 +217,13 @@
       vertical-align: middle;
     }
   }
+  @media (max-width: $screen-tablet){
+    th{
+      font-family: $default-font-normal-bold;
+      font-size: 14px;
+    }
+  }
+
 }
 
 .content-card{
@@ -220,4 +240,63 @@
     }
    } 
 
+}
+
+.header-padding{
+  @media (min-width: $screen-tablet){
+    padding-top: $container_padding_tablet_desktop;
+  }
+}
+
+.mobile-header{
+  @media (max-width: $screen-tablet) {
+    font-size: 22px;
+  }
+}
+
+.mobile-section-title{
+  @media (max-width: $screen-tablet) {
+    text-align: left;
+    font-size: 22px;
+  }
+}
+
+.default-link-text{
+  border-bottom: 2px solid $dark-secondary;
+  color: $dark;
+  display: block;
+  font-size: 18px;
+  font-family: $default-font-extra-bold;
+  margin: 20px auto;
+  padding-bottom: 5px;
+  text-transform: capitalize;
+  width: 118px;
+}
+
+.mobile-border{
+  background-color: $mobile-border-color;
+  display: none;
+  margin: 0 auto;
+  height: 3px;
+  width: 90%;
+
+  @media (max-width: $screen-tablet){
+    display: block;
+  }
+}
+
+.display-desktop{
+  display: block;
+
+  @media( max-width: $screen-tablet){
+    display: none;
+  }
+}
+
+.display-mobile{
+  display: none;
+
+  @media( max-width: $screen-tablet){
+    display: block;
+  }
 }

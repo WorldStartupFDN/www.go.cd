@@ -1,0 +1,16 @@
+.contact-section{
+  background-image: url("/assets/images/contact-section-background.jpg");
+  padding-top: $container_padding_tablet_desktop;
+  color: $light;
+  
+  h2{
+    color: $light;
+  }
+  h3{
+    color: $light;
+  }
+}
+
+.enterprise_contact footer{
+  padding-top: 0;
+}

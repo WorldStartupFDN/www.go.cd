@@ -11,6 +11,7 @@ $dark-secondary: #1B1D21;
 $dark-button-color:  #1C425C;
 $light: #FFFFFF;
 $dark: #000;
+$mobile-border-color: #979797;
  
 //Font Styles
 $default-font-extra-bold: 'URWGeometric-ExtraBold';
@@ -45,5 +46,5 @@ $six-column: (
 
 $single-column: (
   columns: 1,
-  gutter: 10px,
+  gutter: 25px,
 );
