@@ -1,4 +1,13 @@
 .events, .workshops {
+
+  .inner-banner{
+    background: #8A3494;
+    
+    h1{
+      color: #fff;
+    }
+  }
+
   main {
     padding-top: 0;
   }
@@ -33,9 +42,10 @@
 }
 
 .demos {
-  background: rgba(148, 57, 158, 1);
-  background: linear-gradient(135deg, rgba(37, 26, 39, 0.95), 0%, rgba(56, 28, 60, 1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#94399e', endColorstr='#381c3c', GradientType=1);
+  background: #1C1D21;
+  // background: rgba(148, 57, 158, 1);
+  // background: linear-gradient(135deg, rgba(37, 26, 39, 0.95), 0%, rgba(56, 28, 60, 1) 100%);
+  // filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#94399e', endColorstr='#381c3c', GradientType=1);
   background-size: cover;
   text-align: center;
   padding: 40px 0;
@@ -44,20 +54,23 @@
   overflow: hidden;
 
   @media (min-width:$screen-tablet) {
-    background: url(/assets/images/texture-bg-2.jpg) no-repeat center center;
+    // background: url(/assets/images/texture-bg-2.jpg) no-repeat center center;
     margin: 0 0 50px 0;
     background-size: cover;
   }
 
   h3 {
     margin: 0px 0 30px;
-    font-size: 24px;
+    font-size: 30px;
     color: #fff;
     text-align: center;
+    text-transform: uppercase;
     position: relative;
+
     @media (min-width:$screen-tablet) {
       margin: 30px 0;
       font-size: 40px;
+      text-align: center;
     }
 
   }
@@ -65,14 +78,19 @@
     color: #fff;
     text-align: center;
     position: relative;
+
+    @media(max-width: $screen-tablet){
+      text-align: left;
+    }
   }
+
   &:before{
     content:"";
     width:100%;
     height:100%;
     position:absolute;
     display:block;
-    background:rgba(64, 24, 66, 0.71);
+    // background:rgba(64, 24, 66, 0.71);
     top:0;
   }
 
@@ -106,6 +124,18 @@
       border-top-right-radius: 5px;
     }
 
+    h3{
+      position: relative;
+      font-family: 'URWGeometric-ExtraBold';
+    }
+
+    a{
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      line-height: 0.2;
+      text-transform: uppercase;
+    }
   }
 
   li:hover .details {
@@ -123,7 +153,8 @@
   border-top: 5px solid  #4adad9;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  margin-right: 20px;
+  // margin-right: 20px;
+  margin: 0 auto;
   text-align: center;
   color: #000;
   width: 110px;
@@ -171,9 +202,20 @@
   padding: 0;
 }
 
+  .content-card-six-column{
+    border: 1px solid;
+  }
+
+
 .event, .workshop {
   @media screen and (max-width:$screen-xs-max) {
     margin-top: 50px;
+  }
+
+  .page-headings{
+    text-align: center;
+    border: 0px;
+    text-transform: uppercase;
   }
 
   .date,
@@ -197,9 +239,9 @@
   margin: 30px 0;
 
   > li {
-    margin-bottom: 20px;
-    padding: 10px 0;
-    border-bottom: 1px dashed #cccccc;
+    // margin-bottom: 20px;
+    // padding: 10px 0;
+    // border-bottom: 1px dashed #cccccc;
   }
 
 }
@@ -225,22 +267,33 @@
   @include flex-wrap(wrap);
 
   li {
-    width: 275px;
+    display: block;
     font-size: 14px;
     padding: 5px 0;
+    width: 100%;
 
     @media only screen and (min-width:$screen-lg-desktop) {
-      width: 275px;
+      display: block;
+      width: 100%;
     }
 
   }
 
 }
+
 .workshop-topic, .workshop-presenter{
   display: inline-block;
 }
+
 .workshop-presenter{
     margin-left: 20px;
     font-style: italic;
     font-size: 0.9em;
+}
+
+.event-card{
+  border: 1px solid #000;
+  height: 230px;
+  margin-bottom: 10px;
+  padding: 10px;
 }

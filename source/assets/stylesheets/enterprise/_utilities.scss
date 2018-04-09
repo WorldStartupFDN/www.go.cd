@@ -122,6 +122,14 @@
   @include grid-column(1, $four-column);
 }
 
+.content-card-five-column{
+  @media (max-width: $screen-tablet){
+    @include grid-column(1, $six-column);  
+  }
+  @include grid-column(1, $five-column);
+
+}
+
 .content-card-six-column{
   @media (max-width: $screen-tablet){
     @include grid-column(1, $single-column);  
@@ -199,6 +207,18 @@
   }
 }
 
+.brand-button__small{
+  width: auto;
+  height: 25px;
+  font-size: 10px;
+  background: $brand-secondary;
+  font-family: $default-font-extra-bold;
+  color: $dark;
+  padding: 10px;
+  text-transform: uppercase;
+  float: right;
+  
+}
 
 .custom-table{
   width: 100%;

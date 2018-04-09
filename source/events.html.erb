@@ -7,20 +7,20 @@ meta_keywords: "GoCD, continuous delivery, open source, community, events, learn
 <div class="inner-banner plugins">
   <div class="container">
     <div class="banner-content">
-      <h1 class="caption"><span>Webinars and Events</span></h1>
+      <h1 class="caption"><span>Webinars and Demos</span></h1>
     </div>
   </div>
 </div>
 <main>
 <div class="demos">
-  <div class="container">
+  <div class="content-container">
     <h3>Webinars and Demos</h3>
     <p>
       The learning sessions are designed to help you get an overall view of the capabilities of GoCD and answer questions around how to configure your GoCD instance.
     </p>
-    <ul class="demo-list">
+    <ul class="demo-list grid-container">
       <% data.webinars.each do |webinar| %>
-      <li>
+      <li class="content-card-five-column">
           <div class="box swing">
             <div class="datebox">
               <span class="month"><%= webinar.month %> <%= webinar.day %></span>
@@ -35,14 +35,15 @@ meta_keywords: "GoCD, continuous delivery, open source, community, events, learn
     </ul>
   </div>
 </div>
+
 <div class="event">
-  <div class="container">
-    <h3 class="page-headings">Events</h3>
-    <ul class="events-list">
+  <div class="content-container">
+    <h1 class="page-headings">Events</h1>
+    <ul class="events-list grid-container">
       <% data.events.each do |event| %>
-      <li>
+      <li class="content-card-six-column event-card">
         <div class="details">
-          <a href="<%= event.url %>" class="title"><%= event.title %></a>
+          <h3><%= event.title %>  <a href="<%= event.url %>" class="brand-button__small">Get Tickets</a></h3>
           <p><%= event.description %></p>
           <ul class="dates">
             <% event.details.each do |detail| %>
