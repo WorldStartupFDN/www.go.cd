@@ -72,7 +72,7 @@
   margin: 0 auto;
   margin-left: 10%;
   
-  @media(max-width: $screen-tablet){
+  @media(max-width: $tablet_max-width){
     @include grid-column(12);
     float: none;
     margin: 0 auto;
@@ -89,7 +89,7 @@
   padding-right: $container_padding_tablet_desktop;
   width: 100%;
 
-  @media (max-width: $screen-tablet){
+  @media (max-width: $tablet_max-width){
     padding-left: $container_padding_mobile;
     padding-right: $container_padding_mobile;
     padding-top: 2 * $container_padding_mobile;
@@ -110,20 +110,20 @@
 .content-card-three-column{
   @include grid-column(1, $three-column);
   
-  @media (max-width: $screen-tablet){
+  @media (max-width: $tablet_max-width){
     @include grid-column(1, $single-column);  
   }
 }
 
 .content-card-four-column{
-  @media (max-width: $screen-tablet){
+  @media (max-width: $tablet_max-width){
     @include grid-column(1, $single-column);  
   }
   @include grid-column(1, $four-column);
 }
 
 .content-card-five-column{
-  @media (max-width: $screen-tablet){
+  @media (max-width: 747px){
     @include grid-column(1, $six-column);  
   }
   @include grid-column(1, $five-column);
@@ -131,7 +131,7 @@
 }
 
 .content-card-six-column{
-  @media (max-width: $screen-tablet){
+  @media (max-width: $tablet_max-width){
     @include grid-column(1, $single-column);  
   }
   @include grid-column(1, $six-column);
@@ -154,8 +154,6 @@
 
 .secondarynav{
   background: $dark-primary;
-  border-top: 1px solid #9FA0A3;
-  border-bottom: 1px solid #9FA0A3;
   position: fixed;
   width: 100%;
   z-index: 11;
@@ -165,14 +163,14 @@
     margin: 0 auto;
     list-style: none;
     padding: 10px;
-    width: 70%;
+    width: 53%;
     justify-content: space-around;
 
     li{
       a{
         color: $light;
         font-family: $default-font-extra-bold;
-        font-size: 18px;
+        font-size: 22px;
         padding: 10px; 
         transition: all 0.25s;
 
@@ -183,6 +181,13 @@
       }
     }
   }
+
+  @media(min-width: $tablet_min-width) and (max-width: $desktop-large_max-width){
+    .level0{
+      width: 70%;
+    }
+  }
+
 } 
 
 .button-brand{ 
@@ -199,7 +204,7 @@
   text-transform: uppercase;
   width: 424px;
 
-  @media(max-width: $screen-tablet){
+  @media(max-width: $tablet_max-width){
     font-size: 12px; 
     margin-bottom: 2em;
     margin-top: 2em;
@@ -237,7 +242,7 @@
       vertical-align: middle;
     }
   }
-  @media (max-width: $screen-tablet){
+  @media (max-width: $tablet_max-width){
     th{
       font-family: $default-font-normal-bold;
       font-size: 14px;
@@ -255,7 +260,7 @@
     font-family: $default-font-normal-bold;
     font-size: 28px;
 
-    @media( max-width: $screen-tablet){
+    @media( max-width: $tablet_max-width){
       font-size: 22px;
     }
    } 
@@ -263,19 +268,19 @@
 }
 
 .header-padding{
-  @media (min-width: $screen-tablet){
+  @media (min-width: $tablet_max-width){
     padding-top: $container_padding_tablet_desktop;
   }
 }
 
 .mobile-header{
-  @media (max-width: $screen-tablet) {
+  @media (max-width: $tablet_max-width) {
     font-size: 22px;
   }
 }
 
 .mobile-section-title{
-  @media (max-width: $screen-tablet) {
+  @media (max-width: $tablet_max-width) {
     text-align: left;
     font-size: 22px;
   }
@@ -300,7 +305,7 @@
   height: 3px;
   width: 90%;
 
-  @media (max-width: $screen-tablet){
+  @media (max-width: $tablet_max-width){
     display: block;
   }
 }
@@ -308,7 +313,7 @@
 .display-desktop{
   display: block;
 
-  @media( max-width: $screen-tablet){
+  @media( max-width: $tablet_max-width){
     display: none;
   }
 }
@@ -316,7 +321,12 @@
 .display-mobile{
   display: none;
 
-  @media( max-width: $screen-tablet){
+  @media( max-width: $tablet_max-width){
     display: block;
   }
+}
+
+.align-right{
+  float: right;
+  clear: both;
 }

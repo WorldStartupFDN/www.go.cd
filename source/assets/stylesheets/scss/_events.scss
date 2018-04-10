@@ -2,7 +2,7 @@
 
   .inner-banner{
     background: #8A3494;
-    
+
     h1{
       color: #fff;
     }
@@ -102,7 +102,7 @@
   padding: 0;
 
   li {
-    display: inline-block;
+    // display: inline-block;
   }
 
   .details {
@@ -202,11 +202,6 @@
   padding: 0;
 }
 
-  .content-card-six-column{
-    border: 1px solid;
-  }
-
-
 .event, .workshop {
   @media screen and (max-width:$screen-xs-max) {
     margin-top: 50px;
@@ -293,7 +288,8 @@
 
 .event-card{
   border: 1px solid #000;
-  height: 230px;
+  height: auto;
+  min-height: 300px;
   margin-bottom: 10px;
   padding: 10px;
 }
