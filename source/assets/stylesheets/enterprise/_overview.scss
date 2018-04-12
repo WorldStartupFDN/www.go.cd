@@ -1,98 +1,67 @@
-.enterprise-overview {
-  overflow-x: hidden;
-  // Global page elements
-
-  h1 {
-    font-family: $default-font-extra-bold;
-
-    .highlight {
-      color: $brand-secondary;
-    }
-  }
-
-  p {
-    line-height: 1.5em;
-    font-weight: 400;
-  }
-
-  .hr {
-    height: 2px;
-    width: 100%;
-    background-color: #eee;
-    margin-bottom: 1em;
-  }
-
-  .banner-content {
-   display: none;
-  }
-
-  .enterprise main{
-    padding-top: 0;
-    overflow: hidden;
-  }
-
-  //Section Specific Elements
-
-  //Banner
-
-  .header {
-    align-items: center;
+.enterprise-banner {
     background-size: cover;
     background: url("../../assets/images/campaign/enterprise/ccoal_bkgd.jpg");
-    display: flex;
-    height: 500px;
-    justify-content: center;
-    margin-bottom: 1em;
-    margin-top: 1em;
     position: static;
-    top: 0;
-    width: 100%;
 
-    @media(max-width: $screen-tablet){
-      margin-top: 0;
+}
+
+.banner-content {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    @media (min-width: $screen-tablet) {
+        height: 500px;
     }
-
     h1 {
-      color: $light;
-      font-family: $default-font-extra-bold;
-      font-size: 5em;
-      line-height: .9em;
-      text-align: center;
-    }
-
-    @media (max-width:490px) {
-      height: 300px;
-
-      h1 {
+        font-family: $default-font-extra-bold;
+        color: $light;
+        font-family: $default-font-extra-bold;
         font-size: 2.5em;
-      }
+        line-height: .9em;
+        text-align: center;
+        @media(min-width: $screen-md) {
+            font-size: 3.5em;
+            margin:0 6%;
+        }
+        @media(min-width: $screen-xl) {
+            font-size: 5em;
+            margin:0;
+        }
+        .highlight {
+            color: $brand-secondary;
+        }
     }
-
-  }
+    .break {
+        display: block;
+    }
 }
-.content-card{
-  img{
-    width: 50%;
-  }
 
-  @media (max-width: $screen-tablet){
-    width: 100%;
+.features{
 
-    .content-card-title{
-      margin-left: 20%; 
-      text-align: left;
-      width: 75%;
-    }
-
-    img{
-      display: inline-block;
-      vertical-align: top;
-      width: 20%;
-    }
-    p{
-      display: inline-block;
-      width: 75%;
-    }
-  }
- 
 }
+
+
+.enterprise-overview {
+    overflow-x: hidden; // Global page elements
+    p {
+        line-height: 1.5em;
+        font-weight: 400;
+    }
+    .hr {
+        height: 2px;
+        width: 100%;
+        background-color: #eee;
+        margin-bottom: 1em;
+    }
+    .banner-content {
+        display: none;
+    }
+    .enterprise main {
+        padding-top: 0;
+        overflow: hidden;
+    } 
+
+
+}
+

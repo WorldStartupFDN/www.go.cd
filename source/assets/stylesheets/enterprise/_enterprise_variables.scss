@@ -39,25 +39,25 @@ $desktop-large_min-width: 1199.98px;
 
 $three-column: (
   columns: 3,
-  gutter: 60px,
-  media: 1200px
+  gutter: 0,
+  media: "(min-width: $screen-md)"
 );
 
 $four-column: (
   columns: 4,
-  gutter: 10px,
+  gutter: 0px,
   media: 1200px
 );
 
 $six-column: (
   columns: 2,
-  gutter: 10px,
+  gutter: 0px,
   media: 1200px
 );
 
 $single-column: (
   columns: 1,
-  gutter: 25px,
+  gutter: 0,
 );
 
 $five-column: (

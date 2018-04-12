@@ -1,44 +1,49 @@
-<div class="enterprise-overview">
-    <%= partial 'partials/secondarynav' %>
-    <div class="header">
-      <div class="content-container">
-        <div class="header-container">
-          <h1>CONTINUOUS DELIVERY SCALED FOR<br/>YOUR <span class="highlight">ENTERPRISE</span></h1>
-        </div>
-      </div>
-    </div>
+<%= partial 'partials/secondarynav' %>
 
-    <div>
-      <div class="content-container">
-          <h1 class="header-large">Enterprise Plugins and Professional Support </h1>
+<div class="enterprise-banner">
+  <div class="container">
+    <div class="banner-content">
+      <h1>CONTINUOUS DELIVERY SCALED FOR <span class="break"> YOUR <strong class="highlight">ENTERPRISE</strong></span></h1>
+    </div>
+  </div>
+</div>
+
+<section class="features">
+  <div class="container">
+    <h1 class="header-large">Enterprise Plugins and Professional Support </h1>
+
         <div class="grid-container">
           <div class="content-card-three-column">
             <div class="content-card">
               <h3 class="text-center content-card-title">Fits Into Your Ecosystem</h3>
-              <%= image_tag "campaign/enterprise/business.svg", {:title => "Fits Into Your Ecosystem", :alt => "Ecosystem illustration", :class => 'illo img-container'} %>
-              <p class="justified-content">GoCD provides integrations that fit into your enterprise IT ecosystem. Use GoCD with your existing SCM, authorization system and cloud infrastructure.</p>
+              <%= image_tag "campaign/enterprise/business.svg", {:title => "Fits Into Your Ecosystem", :alt => "Ecosystem illustration", :class => 'content-card_img'} %>
+                <p class="content-card_txt">GoCD provides integrations that fit into your enterprise IT ecosystem. Use GoCD with your existing SCM, authorization
+                  system and cloud infrastructure.</p>
             </div>
           </div>
-
-
+        
+        
           <div class="content-card-three-column">
             <div class="content-card">
               <h3 class="text-center content-card-title">Continuous Delivery at Scale</h3>
-              <%= image_tag "campaign/enterprise/postgres.svg", {:title => "Continuous Delivery at Scale", :alt => "CD illustration", :class => 'illo img-container'} %>
-              <p class="justified-content">GoCD enterprise extensions provide plugins to help you scale across large number of teams, agents, and pipelines.</p>
+              <%= image_tag "campaign/enterprise/postgres.svg", {:title => "Continuous Delivery at Scale", :alt => "CD illustration", :class => 'content-card_img'} %>
+                <p class="content-card_txt">GoCD enterprise extensions provide plugins to help you scale across large number of teams, agents, and pipelines.</p>
             </div>
           </div>
-
+        
           <div class="content-card-three-column">
             <div class="content-card">
               <h3 class="text-center content-card-title">Professional Support</h3>
-              <%= image_tag "campaign/enterprise/support.svg", {:title => "Professional Support", :alt => "Chat illustration", :class => 'illo img-container'} %>
-              <p class="justified-content">Get access to both our Support team and GoCD's development team via unlimited tickets per month. Get notifications for all bug fixes, security patches, and upgrades.</p>
+              <%= image_tag "campaign/enterprise/support.svg", {:title => "Professional Support", :alt => "Chat illustration", :class => 'content-card_img'} %>
+                <p class="content-card_txt">Get access to both our Support team and GoCD's development team via unlimited tickets per month. Get notifications
+                  for all bug fixes, security patches, and upgrades.</p>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <script src="/assets/javascripts/marketo_popover.js"></script>
-</div>
+
+  </div>
+</section>
+ 
+<script src="/assets/javascripts/marketo_popover.js"></script>
+
 <button class="button-brand"> Contact Us to Get Started</button>
