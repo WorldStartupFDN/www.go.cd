@@ -1,332 +1,368 @@
 // All the Utility classes go here
 // For Example : button general Styling, Margins, Text Styling for header, Paragraph
 // All the styling are written as Sass generators which can be extended
-
 // Guidelines to add further styles: 
 // 1. Follow alphabetical order in the writing styles
 // 2. Nest the style's in if only required at most
 // 3. Use more generic classnames
 // 4. Follow BEM model in writing styles
-
 @import 'enterprise/enterprise_variables';
-
-
-
-%button{
-  border-radius: 2px;
-  margin: 0.5em; 
-  text-align: center;
+%button {
+    border-radius: 2px;
+    margin: 0.5em;
+    text-align: center;
 }
 
-.button-large-light{
-  @extend %button;
-  background: $light;
-  border: 2px solid $dark-button-color;
-  height: 4em;
-  width: 20em;
+.button-large-light {
+    @extend %button;
+    background: $light;
+    border: 2px solid $dark-button-color;
+    height: 4em;
+    width: 20em;
 }
 
-.button-large-dark{
-  @extend %button;
-  background: $dark-button-color;
-  border: 2px solid $dark-button-color;
-  height: 4em;
-  width: 20em;
+.button-large-dark {
+    @extend %button;
+    background: $dark-button-color;
+    border: 2px solid $dark-button-color;
+    height: 4em;
+    width: 20em;
 }
 
-.banner-title{
-  font-family: $default-font-extra-bold;
-  font-size: 5em;
-  font-weight: bold;
-  line-height: 0.9em;
-  text-align: center;
-  text-transform: uppercase;
+.banner-title {
+    font-family: $default-font-extra-bold;
+    font-size: 5em;
+    font-weight: bold;
+    line-height: 0.9em;
+    text-align: center;
+    text-transform: uppercase;
 }
 
-.header-large{
-  font-family: $default-font-extra-bold;
-  padding-top:  20px;
-  padding-bottom: 20px;
-  text-align: center;
-
+.header-large {
+    font-family: $default-font-extra-bold;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 25px;
+    @media (min-width: $screen-sm) {
+        font-size:30px;
+    }
+    @media (min-width: $screen-md) {
+        margin: 30px 0;
+    }
+    @media (min-width:$screen-xl) {
+        font-size: 40px;
+        padding: 40px 0;
+    }
 }
 
-.header-medium{
-  font-family: $default-font-normal-bold;
+.header-medium {
+    font-family: $default-font-normal-bold;
 }
 
-.text-normal{
-  font-family: $default-font-normal;
+.text-normal {
+    font-family: $default-font-normal;
 }
 
-.text-center{
-  text-align: center;
+.text-center {
+    text-align: center;
 }
 
 .highlight {
-  color: #4ad9d9;
+    color: #4ad9d9;
 }
 
-.header-container{
-  @include grid-column(10);
-  margin: 0 auto;
-  margin-left: 10%;
-  
-  @media(max-width: $tablet_max-width){
-    @include grid-column(12);
-    float: none;
+.header-container {
+    @include grid-column(10);
     margin: 0 auto;
-  }
+    margin-left: 10%;
+    @media(max-width: $tablet_max-width) {
+        @include grid-column(12);
+        float: none;
+        margin: 0 auto;
+    }
 }
 
-.content-container{
-  box-sizing: border-box;
-  display: block;
-  height: auto;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: $container_padding_tablet_desktop;
-  padding-right: $container_padding_tablet_desktop;
-  width: 100%;
-
-  @media (max-width: $tablet_max-width){
-    padding-left: $container_padding_mobile;
-    padding-right: $container_padding_mobile;
-    padding-top: 2 * $container_padding_mobile;
-  }
-  @media(min-width: 1200px){
-    padding-left: $container_padding_xl_desktop;
-    padding-right: $container_padding_xl_desktop;
-  }
-
+.content-container {
+    box-sizing: border-box;
+    display: block;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: $container_padding_tablet_desktop;
+    padding-right: $container_padding_tablet_desktop;
+    width: 100%;
+    @media (max-width: $tablet_max-width) {
+        padding-left: $container_padding_mobile;
+        padding-right: $container_padding_mobile;
+        padding-top: 2 * $container_padding_mobile;
+    }
+    @media(min-width: 1200px) {
+        padding-left: $container_padding_xl_desktop;
+        padding-right: $container_padding_xl_desktop;
+    }
 }
 
-.grid-container{
-  @include grid-container;
-  margin-top: 2em;
-  padding-bottom: 20px;
+.grid-container {
+    @include grid-container;
+    margin-right: -15px;
+    margin-left: -15px;
 }
 
-.content-card-three-column{
-  @include grid-column(1, $three-column);
-  
-  @media (max-width: $tablet_max-width){
-    @include grid-column(1, $single-column);  
-  }
+.content-card-three-column {
+    @include grid-column(1, $single-column);
+    padding-left: 15px;
+    padding-right: 15px;
+    @media (min-width: $screen-md) {
+        @include grid-column(1, $three-column);
+    }
 }
 
-.content-card-four-column{
-  @media (max-width: $tablet_max-width){
-    @include grid-column(1, $single-column);  
-  }
-  @include grid-column(1, $four-column);
+.content-card-four-column {
+    padding-left: 15px;
+    padding-right: 15px;
+    @media (max-width: $tablet_max-width) {
+        @include grid-column(1, $single-column);
+    }
+    @include grid-column(1, $four-column);
 }
 
-.content-card-five-column{
-  @media (max-width: 747px){
-    @include grid-column(1, $six-column);  
-  }
-  @include grid-column(1, $five-column);
-
+.content-card-five-column {
+    padding-left: 15px;
+    padding-right: 15px;
+    @media (max-width: 747px) {
+        @include grid-column(1, $six-column);
+    }
+    @include grid-column(1, $five-column);
 }
 
-.content-card-six-column{
-  @media (max-width: $tablet_max-width){
-    @include grid-column(1, $single-column);  
-  }
-  @include grid-column(1, $six-column);
+.content-card-six-column {
+    padding-left: 15px;
+    padding-right: 15px;
+    @media (max-width: $tablet_max-width) {
+        @include grid-column(1, $single-column);
+    }
+    @include grid-column(1, $six-column);
 }
 
-.img-container{
-  display: block;
-  margin: 20px auto;
-  width: 80%;
+.img-container {
+    display: block;
+    margin: 20px auto;
+    width: 80%;
 }
 
-.img-rounded{
-  border-radius: 50%;
+.img-rounded {
+    border-radius: 50%;
 }
 
-.img-rounded__bordered{
-  border-radius: 50%;
-  border: 2px solid $mobile-border-color;
+.img-rounded__bordered {
+    border-radius: 50%;
+    border: 2px solid $mobile-border-color;
 }
 
-.secondarynav{
-  background: $dark-primary;
-  position: fixed;
-  width: 100%;
-  z-index: 11;
-
-  .level0{
-    display: flex;
-    margin: 0 auto;
-    list-style: none;
-    padding: 10px;
-    width: 53%;
-    justify-content: space-around;
-
-    li{
-      a{
-        color: $light;
-        font-family: $default-font-extra-bold;
-        font-size: 22px;
-        padding: 10px; 
-        transition: all 0.25s;
-
-        &:hover{
-          color: $brand-secondary;
+.secondarynav {
+    background: $dark-primary;
+    position: fixed;
+    width: 100%;
+    z-index: 11;
+    .level0 {
+        display: flex;
+        margin: 0 auto;
+        list-style: none;
+        padding: 10px;
+        width: 53%;
+        justify-content: space-around;
+        li {
+            a {
+                color: $light;
+                font-family: $default-font-extra-bold;
+                font-size: 22px;
+                padding: 10px;
+                transition: all 0.25s;
+                &:hover {
+                    color: $brand-secondary;
+                }
+            }
         }
-        
-      }
     }
-  }
-
-  @media(min-width: $tablet_min-width) and (max-width: $desktop-large_max-width){
-    .level0{
-      width: 70%;
+    @media(min-width: $tablet_min-width) and (max-width: $desktop-large_max-width) {
+        .level0 {
+            width: 70%;
+        }
     }
-  }
-
-} 
-
-.button-brand{ 
-  background: $brand-secondary;
-  color: $dark;
-  display: block;
-  font-family: $default-font-normal-bold;
-  font-size: 22px;
-  height: 37px;
-  line-height: 0.2;
-  margin: 0 auto;
-  margin-top: 2em;
-  padding: 20px;
-  text-transform: uppercase;
-  width: 424px;
-
-  @media(max-width: $tablet_max-width){
-    font-size: 12px; 
-    margin-bottom: 2em;
-    margin-top: 2em;
-    width: 200px;
-  }
 }
 
-.brand-button__small{
-  width: auto;
-  height: 25px;
-  font-size: 10px;
-  background: $brand-secondary;
-  font-family: $default-font-extra-bold;
-  color: $dark;
-  padding: 10px;
-  text-transform: uppercase;
-  float: right;
-  
-}
-
-.custom-table{
-  width: 100%;
-  max-width: 100%;
-
-  th{
-    text-transform: uppercase;
-  }
-
-  tbody {
-    tr:nth-child(odd){
-      background: #f9f9f9;
-    }
-    td{
-      padding: 10px;
-      vertical-align: middle;
-    }
-  }
-  @media (max-width: $tablet_max-width){
-    th{
-      font-family: $default-font-normal-bold;
-      font-size: 14px;
-    }
-  }
-
-}
-
-.content-card{
-  width: 100%;
-  display: block;
-  margin: 0 auto;
-
-  .content-card-title{
+.button-brand {
+    background: $brand-secondary;
+    color: $dark;
+    display: block;
     font-family: $default-font-normal-bold;
-    font-size: 28px;
-
-    @media( max-width: $tablet_max-width){
-      font-size: 22px;
+    line-height: 0.2;
+    margin: 0 auto;
+    padding: 20px;
+    text-transform: uppercase;
+    margin: 20px auto 50px auto;
+    font-size: 12px;
+    width: 200px;
+    border: 0;
+    &:focus,
+    &:active {
+        outline: 0;
     }
-   } 
-
+    @media(min-width: $screen-md) {
+        height: 37px;
+        font-size: 22px;
+        width: 424px;
+        margin: 40px auto 20px;
+    }
 }
 
-.header-padding{
-  @media (min-width: $tablet_max-width){
-    padding-top: $container_padding_tablet_desktop;
-  }
+.brand-button__small {
+    width: auto;
+    height: 25px;
+    font-size: 10px;
+    background: $brand-secondary;
+    font-family: $default-font-extra-bold;
+    color: $dark;
+    padding: 10px;
+    text-transform: uppercase;
+    float: right;
 }
 
-.mobile-header{
-  @media (max-width: $tablet_max-width) {
-    font-size: 22px;
-  }
+.custom-table {
+    width: 100%;
+    max-width: 100%;
+    th {
+        text-transform: uppercase;
+    }
+    tbody {
+        tr:nth-child(odd) {
+            background: #f9f9f9;
+        }
+        td {
+            padding: 10px;
+            vertical-align: middle;
+        }
+    }
+    @media (max-width: $tablet_max-width) {
+        th {
+            font-family: $default-font-normal-bold;
+            font-size: 14px;
+        }
+    }
 }
 
-.mobile-section-title{
-  @media (max-width: $tablet_max-width) {
-    text-align: left;
-    font-size: 22px;
-  }
+.content-card {
+    width: 100%;
+    margin: 0 0 30px;
+    overflow: hidden;
 }
 
-.default-link-text{
-  border-bottom: 2px solid $dark-secondary;
-  color: $dark;
-  display: block;
-  font-size: 18px;
-  font-family: $default-font-extra-bold;
-  margin: 20px auto;
-  padding-bottom: 5px;
-  text-transform: capitalize;
-  width: 118px;
+.content-card-title {
+    font-family: $default-font-normal-bold;
+    margin: 0 0 10px 0;
+    @media (max-width: $screen-md-min) {
+        padding-left: 15px;
+        text-align: left;
+        font-size: 17px;
+        float: right;
+        width: 80%;
+    }
+    @media (min-width:$screen-md) {
+        font-size: 18px;
+    }
+    @media (min-width:$screen-lg) {
+        font-size: 28px;
+    }
 }
 
-.mobile-border{
-  background-color: $mobile-border-color;
-  display: none;
-  margin: 0 auto;
-  height: 3px;
-  width: 90%;
+.content-card_img {
+    @media (max-width: $screen-md-min) {
+        width: 20%;
+        margin-top: 25px;
+        clear: left;
+        float: left;
+    }
+    @media (min-width:$screen-md) {
+        max-width: 100%;
+        width: 60%;
+        margin: 30px auto;
+        display: block;
+    }
+}
 
-  @media (max-width: $tablet_max-width){
+.content-card_txt {
+    @media (max-width: $screen-md-min) {
+        width: 80%;
+        padding-left: 15px;
+        float: right;
+    }
+    @media (min-width:$screen-md) {
+        font-size: 14px;
+        line-height: 20px;
+        
+    }
+    @media (min-width:$screen-lg) {
+        font-size: 16px;
+    }
+}
+
+.header-padding {
+    @media (min-width: $tablet_max-width) {
+        padding-top: $container_padding_tablet_desktop;
+    }
+}
+
+.mobile-header {
+    @media (max-width: $tablet_max-width) {
+        font-size: 22px;
+    }
+}
+
+.mobile-section-title {
+    @media (max-width: $tablet_max-width) {
+        text-align: left;
+        font-size: 22px;
+    }
+}
+
+.default-link-text {
+    border-bottom: 2px solid $dark-secondary;
+    color: $dark;
     display: block;
-  }
+    font-size: 18px;
+    font-family: $default-font-extra-bold;
+    margin: 20px auto;
+    padding-bottom: 5px;
+    text-transform: capitalize;
+    width: 118px;
 }
 
-.display-desktop{
-  display: block;
-
-  @media( max-width: $tablet_max-width){
+.mobile-border {
+    background-color: $mobile-border-color;
     display: none;
-  }
+    margin: 0 auto;
+    height: 3px;
+    width: 90%;
+    @media (max-width: $tablet_max-width) {
+        display: block;
+    }
 }
 
-.display-mobile{
-  display: none;
-
-  @media( max-width: $tablet_max-width){
+.display-desktop {
     display: block;
-  }
+    @media( max-width: $tablet_max-width) {
+        display: none;
+    }
 }
 
-.align-right{
-  float: right;
-  clear: both;
+.display-mobile {
+    display: none;
+    @media( max-width: $tablet_max-width) {
+        display: block;
+    }
+}
+
+.align-right {
+    float: right;
+    clear: both;
 }
