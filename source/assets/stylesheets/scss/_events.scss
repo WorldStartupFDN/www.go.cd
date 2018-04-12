@@ -295,17 +295,17 @@
 }
 
 .event-item {
-  padding: 15px;
+  padding: 0 15px;
   @media (min-width: $screen-md){
-    padding: 14px;
+    padding: 0 14px;
   }
 
   @media (min-width: $screen-lg){
-    padding: 30px;
+    padding: 0 30px;
   }
 
   @media (min-width: $screen-xl){
-    padding: 40px;
+    padding: 0 40px;
   }
 }
 

@@ -37,33 +37,34 @@
       <div class="row">
         <div class="col-md-2">
           <ul class="unordered-list">
-            <li><a href="https://www.gocd.org/download/">DOWNLOAD GoCD</a></li>
-            <li><a href="https://www.gocd.org/plugins/">PLUGINS</a></li>
-            <li><a href="http://github.com/gocd">FORK ME ON GITHUB</a></li>
+            <li><%= link_to 'DOWNLOAD GoCD', '/download/'%></li>
+            <li><%= link_to 'PLUGINS', '/plugins/' %></li>
+            <li><%= link_to 'FORK ME ON GITHUB', 'http://github.com/gocd', target: "_blank" %></li>
           </ul>
         </div>
 
         <div class="col-md-2">
           <ul class="unordered-list">
-            <li><a href="https://www.gocd.org/contribute/">CONTRIBUTE</a></li>
-            <li><a href="https://www.gocd.org/events/">WEBINARS + EVENTS</a></li>
-            <li><a href="https://www.gocd.org/resources.html">RESOURCES</a></li>
+
+            <li><%= link_to 'CONTRIBUTE' , '/contribute' %></li>
+            <li> <%= link_to 'WEBINARS + EVENTS', '/events' %></li>
+            <li><%= link_to 'RESOURCES', '/resources'%></li>
           </ul>
         </div>
 
         <div class="col-md-2">
           <ul class="unordered-list">
-            <li><a href="https://www.gocd.org/getting-started/part-1/">GETTING STARTED </a></li>
-            <li><a href="https://brandfolder.com/twproducts">LOGOS + BRAND</a> </li>
-            <li><a href="https://www.go.cd/enterprise/support/">ENTERPRISE SUPPORT</a></li>
+            <li><%= link_to 'GETTING STARTED', '/getting-started/part-1/' %></li>
+            <li><%= link_to 'LOGOS + BRAND', 'twproducts'%> </li>
+            <li><%= link_to 'ENTERPRISE SUPPORT', 'enterprise/support/'%> </li>
           </ul>
         </div>
 
         <div class="col-md-2">
           <ul class="unordered-list">
-            <li><a href="https://support.thoughtworks.com/hc/en-us/requests/new">SUBMIT A TICKET</a></li>
-            <li><a href="https://www.thoughtworks.com/go/thoughtworks-support-services-general-terms/">TERMS + CONDITIONS</a></li>
-            <li><a href="https://www.thoughtworks.com/privacy-policy">PRIVACY</a></li>
+            <li><%= link_to 'SUBMIT A TICKET', 'https://support.thoughtworks.com/hc/en-us/requests/new', target: "_blank"%></li>
+            <li> <%= link_to 'TERMS + CONDITIONS', 'https://www.thoughtworks.com/go/thoughtworks-support-services-general-terms/', target: "_blank" %> </li>
+            <li><%= link_to 'PRIVACY', 'https://www.thoughtworks.com/privacy-policy' %> </li>
           </ul>
         </div>
 

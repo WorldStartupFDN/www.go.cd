@@ -106,6 +106,8 @@
     @include grid-container;
     margin-right: -15px;
     margin-left: -15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .content-card-three-column {
@@ -309,6 +311,7 @@
 .header-padding {
     @media (min-width: $tablet_max-width) {
         padding-top: $container_padding_tablet_desktop;
+        margin: 4% 0 5% 0;
     }
 }
 
@@ -340,7 +343,7 @@
 .mobile-border {
     background-color: $mobile-border-color;
     display: none;
-    margin: 0 auto;
+    margin: 50px auto;
     height: 3px;
     width: 90%;
     @media (max-width: $tablet_max-width) {
