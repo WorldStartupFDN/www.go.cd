@@ -22,12 +22,6 @@ header.top {
 		}
 
 	}
-
-	&:hover {
-		background: $header-bg;
-		transition: all 0.5s ease;
-	}
-
 }
 .logo {
 	margin: 13px 0;
@@ -36,7 +30,6 @@ header.top {
 }
 
 .fork-me {
-
     width: 115px;
     height: 115px;
     position: absolute;
