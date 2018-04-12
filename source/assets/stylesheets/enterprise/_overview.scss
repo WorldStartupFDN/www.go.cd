@@ -2,10 +2,9 @@
     background-size: cover;
     background: url("../../assets/images/campaign/enterprise/ccoal_bkgd.jpg");
     position: static;
-
 }
 
-.banner-content {
+.enterprise-banner-content {
     align-items: center;
     display: flex;
     justify-content: center;
@@ -22,11 +21,11 @@
         text-align: center;
         @media(min-width: $screen-md) {
             font-size: 3.5em;
-            margin:0 6%;
+            margin: 0 6%;
         }
         @media(min-width: $screen-xl) {
             font-size: 5em;
-            margin:0;
+            margin: 0;
         }
         .highlight {
             color: $brand-secondary;
@@ -37,10 +36,7 @@
     }
 }
 
-.features{
-
-}
-
+.features {}
 
 .enterprise-overview {
     overflow-x: hidden; // Global page elements
@@ -60,8 +56,5 @@
     .enterprise main {
         padding-top: 0;
         overflow: hidden;
-    } 
-
-
+    }
 }
-
