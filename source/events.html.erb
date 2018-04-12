@@ -13,14 +13,14 @@ meta_keywords: "GoCD, continuous delivery, open source, community, events, learn
 </div>
 <main>
 <div class="demos">
-  <div class="content-container">
+  <div class="container">
     <h3>Webinars and Demos</h3>
     <p>
       The learning sessions are designed to help you get an overall view of the capabilities of GoCD and answer questions around how to configure your GoCD instance. Each session is one hour and includes a product overview, demo, and Q&A session.
     </p>
-    <ul class="demo-list grid-container">
+    <ul class="demo-list events-container">
       <% data.webinars.each do |webinar| %>
-      <li class="content-card-five-column">
+      <li class="event-item">
           <div class="box swing">
             <div class="datebox">
               <span class="month"><%= webinar.month %> <%= webinar.day %></span>
@@ -36,12 +36,12 @@ meta_keywords: "GoCD, continuous delivery, open source, community, events, learn
   </div>
 </div>
 
-<div class="event">
+<div class="event container">
   <div class="content-container">
     <h1 class="page-headings">Events</h1>
-    <ul class="events-list grid-container">
-      <% data.events.each do |event| %>
-      <li class="content-card-six-column event-card">
+    <ul class="events-list">
+      <% data.events.each_with_index do |event, index| %>
+      <li class="event-card">
         <div class="details">
           <h3><%= event.title %>  <a href="<%= event.url %>" class="brand-button__small">Get Tickets</a></h3>
           <p><%= event.description %></p>

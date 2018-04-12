@@ -276,20 +276,54 @@
 
 }
 
-.workshop-topic, .workshop-presenter{
+.workshop-topic, .workshop-presenter {
   display: inline-block;
 }
 
-.workshop-presenter{
+.workshop-presenter {
     margin-left: 20px;
     font-style: italic;
     font-size: 0.9em;
 }
 
-.event-card{
+.events-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 100%;
+  justify-content: center;
+}
+
+.event-item {
+  padding: 15px;
+  @media (min-width: $screen-md){
+    padding: 14px;
+  }
+
+  @media (min-width: $screen-lg){
+    padding: 30px;
+  }
+
+  @media (min-width: $screen-xl){
+    padding: 40px;
+  }
+}
+
+.events-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.event-card {
   border: 1px solid #000;
   height: auto;
-  min-height: 300px;
-  margin-bottom: 10px;
+  margin: 0 0 10px 10px;
   padding: 10px;
+  width: 100%;
+
+  @media (min-width: $screen-md){
+    width: 48%;
+  }
 }
+
