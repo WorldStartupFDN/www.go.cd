@@ -5,86 +5,82 @@
 @import 'enterprise/features';
 @import 'enterprise/plugins';
 @import 'enterprise/contact';
-
 // .enterprise-quotes{
 //   margin-top: 40px;
 // }
-
-.enterprise-stock-head-image{
-  width: 140px;
-  height: 140px;
-  @media (max-width: $tablet_max-width){
-    float: none !important;
-  }
+.enterprise-stock-head-image {
+    width: 140px;
+    height: 140px;
+    @media (max-width: $tablet_max-width) {
+        float: none !important;
+    }
 }
 
 .enterprise {
-
-  .mktoForm{
-    width: 80% !important;
-  }
-
-  .mktoFormCol{
-    width: 100% !important;
-  }
-   .mktoFieldWrap{
-    width: 100% !important;
-   }
-
-  .mktoButtonWrap{
-    margin-left: 0 !important;
-    width: 100%;
-  }
-
-  .mktoButton{
-    background: $brand-secondary;
-    display: block;
-    margin: 15% 25% !important;
-    padding: 5px 50px;
-    font-family: $default-font-normal-bold !important;
-    font-size: 22px;
-    text-transform: uppercase;
-    width: 100%;
-  }
-
-  .mktoField{
-    border-radius: 3px;
-    box-shadow: none;
-    outline: none;
-    padding: 5px;
-    width: 100% !important;
-  }
-
-  .mktoLabel{
-    font-family: $default-font-normal-bold !important;
-    font-size:  16px;
-    text-transform: uppercase;
-  }
-
-  .cf_sign_on{
-    display: none;
-  }
-
-  .mktoFormRow {
-    margin: 25px 0 15px 0;
-
-    input, select{
-      outline: none;
-      box-shadow: none;
-      border: 1px solid #979797;
-      background: transparent;
-      border-radius: 6px;
-      padding: 10px 20px;
-      height: 34px;
-      width: 100% !important;
+    .mktoForm {
+        width: 80% !important;
     }
-    @media (min-width: $screen-md){
-      margin: 20px 0 10px 0;
+    .mktoFormCol {
+        width: 100% !important;
     }
-  }
+    .mktoFieldWrap {
+        width: 100% !important;
+    }
+    .mktoButtonWrap {
+        margin-left: 0 !important;
+        width: 100%;
+    }
+    .mktoButton {
+        background: $brand-secondary;
+        display: block;
+        margin: 15% 25% !important;
+        padding: 5px 50px;
+        font-family: $default-font-normal-bold !important;
+        font-size: 22px;
+        text-transform: uppercase;
+        width: 100%;
+    }
+    .mktoField {
+        border-radius: 3px;
+        box-shadow: none;
+        outline: none;
+        padding: 5px;
+        width: 100% !important;
+    }
+    .mktoLabel {
+        font-family: $default-font-normal-bold !important;
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+    .cf_sign_on {
+        display: none;
+    }
+    .mktoFormRow {
+        margin: 25px 0 15px 0;
+        input,
+        select {
+            outline: none;
+            box-shadow: none;
+            border: 1px solid #979797;
+            background: transparent;
+            border-radius: 6px;
+            padding: 10px 20px;
+            height: 34px;
+            width: 100% !important;
+        }
+        @media (min-width: $screen-md) {
+            margin: 20px 0 10px 0;
+        }
+    }
 }
 
-.enterprise-addons-keypoints{
-  padding: 0;
-  padding-left: 16px;
+.enterprise-addons-keypoints {
+    padding: 0;
+    padding-left: 16px;
+}
+
+.mktoForm.mktoLayoutAbove .mktoField,
+.mktoForm.mktoLayoutAbove .mktoLogicalField {
+ 
+    border: 1px solid #ccc;
 }
