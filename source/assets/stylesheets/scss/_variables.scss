@@ -20,7 +20,6 @@ $get-started-nav: 11;
 $backtotop: 12;
 $brand-primary: $primary-color;
 $border-radius-base: 3px !default;
-
 // responsive breakpoints
 $screen-sm :576px;
 $screen-md: 768px;
@@ -31,3 +30,6 @@ $screen-md-min: 767.98px;
 $screen-lg-min: 991.98px;
 $screen-xl-min: 1201199.98px;
 
+// overriding old variables from bootstrap
+$screen-tablet: $screen-md;
+$screen-desktop:$screen-lg;

@@ -106,7 +106,8 @@ h2.campaign-feature-title {
       min-height: 140px;
 
       @media (min-width:$screen-tablet) {
-        width: 240px;
+        width: 146px;
+        min-height:86px;
       }
 
     }
@@ -266,19 +267,20 @@ h1.main-caption {
   .feature-box {
     padding: 20px;
 
-    @media (min-width:$screen-tablet) {
+    @media (min-width:$screen-md) {
       border: 2px solid #4ad9d9;
       width: 100%;
       float: left;
       padding: 30px;
       margin-bottom: 10px;
+      height:470px;
     }
 
-    @media (min-width:$screen-desktop) {
+    @media (min-width:$screen-lg) {
       height: 444px;
     }
 
-    @media (min-width:$screen-lg-desktop) {
+    @media (min-width:$screen-xl) {
       height: 440px;
     }
 
