@@ -44,7 +44,10 @@ meta_keywords: "GoCD, continuous delivery, open source, community, events, learn
       <% data.events.each_with_index do |event, index| %>
       <li class="event-card">
         <div class="details">
-          <h3><%= event.title %>  <a href="<%= event.url %>" class="brand-button__small">Get Tickets</a></h3>
+          <div class="event-header-container">
+            <h3 class="event-title"><%= event.title %></h3>
+            <a href="<%= event.url %>" class="brand-button__small event-button">Get Tickets</a>
+          </div>
           <p><%= event.description %></p>
           <ul class="dates">
             <% event.details.each do |detail| %>
