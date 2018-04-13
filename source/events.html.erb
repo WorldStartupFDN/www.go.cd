@@ -13,54 +13,53 @@ meta_keywords: "GoCD, continuous delivery, open source, community, events, learn
 </div>
 
 <main>
-<div class="demos">
-  <div class="container">
+  <div class="demos">
     <h3>Webinars and Demos</h3>
-    <p>
-      The learning sessions are designed to help you get an overall view of the capabilities of GoCD and answer questions around how to configure your GoCD instance. Each session is one hour and includes a product overview, demo, and Q&amp;A session.
-    </p>
-    <ul class="demo-list events-container">
-      <% data.webinars.each do |webinar| %>
-      <li class="event-item">
-          <div class="box swing">
-            <div class="datebox">
-              <span class="month"><%= webinar.month %> <%= webinar.day %></span>
-              <span class="time"><%= webinar.time %>
-                <span class="location"><%= webinar.location %></span>
-              </span>
-              <a href="<%= webinar.url %>" class=" button-small">Register</a>
-            </div>
+    <div class="intro-paragraph">
+      <p>
+        The learning sessions are designed to help you get an overall view of the capabilities of GoCD and answer questions around how to configure your GoCD instance. Each session is one hour and includes a product overview, demo, and Q&amp;A session.
+      </p>
+    </div>
+    <div class="list-container">
+      <ul class="events-list">
+        <% data.webinars.each do |webinar| %>
+        <li class="event-item">
+          <div class="datebox">
+            <span class="month"><%= webinar.month %> <%= webinar.day %></span>
+            <span class="time"><%= webinar.time %></span>
+            <span class="location"><%= webinar.location %></span>
+            <a href="<%= webinar.url %>"" class="button-small">Register</a>
           </div>
-      </li>
-      <% end %>
-    </ul>
+        </li>
+        <% end %>
+      </ul>
+    </div>
   </div>
-</div>
 
-<div class="event container">
-  <div class="content-container">
-    <h1 class="page-headings">Events</h1>
-    <ul class="events-list">
-      <% data.events.each_with_index do |event, index| %>
-      <li class="event-card">
-        <div class="details">
-          <div class="event-header-container">
-            <h3 class="event-title"><%= event.title %></h3>
-            <a href="<%= event.url %>" class="brand-button__small event-button">Get Tickets</a>
+  <div class="event container">
+    <div class="content-container">
+      <h1 class="page-headings">Events</h1>
+      <ul class="events-list">
+        <% data.events.each_with_index do |event, index| %>
+        <li class="event-card">
+          <div class="details">
+            <div class="event-header-container">
+              <h3 class="event-title"><%= event.title %></h3>
+              <a href="<%= event.url %>" class="brand-button__small event-button">Get Tickets</a>
+            </div>
+            <p><%= event.description %></p>
+            <ul class="dates">
+              <% event.details.each do |detail| %>
+              <li>
+                <div class="date"><i class="fa fa-calendar"></i> <%= detail.date %></div>
+                <div class="location"><i class="fa fa-map-marker"></i> <%= detail.location %></div>
+              </li>
+              <% end %>
+            </ul>
           </div>
-          <p><%= event.description %></p>
-          <ul class="dates">
-            <% event.details.each do |detail| %>
-            <li>
-              <div class="date"><i class="fa fa-calendar"></i> <%= detail.date %></div>
-              <div class="location"><i class="fa fa-map-marker"></i> <%= detail.location %></div>
-            </li>
-            <% end %>
-          </ul>
-        </div>
-      </li>
-      <% end %>
-    </ul>
+        </li>
+        <% end %>
+      </ul>
+    </div>
   </div>
-</div>
 </main>
