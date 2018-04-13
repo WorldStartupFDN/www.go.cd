@@ -133,41 +133,18 @@ $actions-bg-hover: $primary-color;
 			transition: all 0.5s ease;
 			height: 175px;
 
-			@media (min-width:$screen-tablet) {
+			@media (min-width:$screen-md) {
 				height: 195px;
 			}
 
 		}
 
-		@media (min-width:$screen-tablet) {
-			width: 47%;
-			margin: 0px 0 20px 25px;
-
-			&:nth-child(2n+1) {
-				margin-left: 0;
-			}
-
+		@media (min-width:$screen-md) {
+			width: 45%;
 		}
 
-		@media (min-width:$screen-desktop) {
-			width: 31%;
-
-			&:nth-child(2n+1) {
-				margin-left: 25px;
-			}
-
-			&:nth-child(3n+4) {
-				margin-left: 0;
-			}
-
-			&:first-child {
-				margin-left: 0;
-			}
-
-		}
-
-		@media (min-width:$screen-lg-desktop) {
-			width: 31%;
+		@media (min-width:$screen-lg) {
+			width: 30%;
 		}
 
 		.go-logo {
@@ -179,7 +156,7 @@ $actions-bg-hover: $primary-color;
 		.name {
 			font-size: 17px;
 
-			@media (min-width:$screen-tablet) {
+			@media (min-width:$screen-md) {
 				// height: 44px;
 			}
 
@@ -190,7 +167,7 @@ $actions-bg-hover: $primary-color;
 			line-height: 20px;
 			// color: $subtext;
 
-			@media (min-width:$screen-tablet) {
+			@media (min-width:$screen-md) {
 			}
 
 		}
@@ -210,14 +187,6 @@ $actions-bg-hover: $primary-color;
 
 			.fa {
 				margin-right: 3px;
-			}
-
-			@media (min-width:$screen-tablet) {
-				// position: absolute;
-				// bottom: 0;
-				// width: 100%;
-				// margin: 0;
-				// left: 0;
 			}
 
 		}
