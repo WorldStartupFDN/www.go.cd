@@ -13,6 +13,39 @@
 
 
 
-.enterprise_contact footer{
-  padding-top: 0;
-}
+.enterprise_contact{
+
+  .header-padding{
+    margin: 0;
+  } 
+
+  .contact-top-cards{
+    padding-top: 50px;
+
+    @media(max-width: $screen-md){
+      h1{
+        text-align: center;
+      }
+    }
+
+    .strong{
+      @media (max-width: $screen-lg){
+        font-family: $default-font-extra-bold;
+      }
+    }
+
+    p{
+      color: #333333;
+      @media (min-width: $screen-lg){
+        font-family: $default-font-normal-bold;
+        font-size: 28px;
+        margin-top: 25px;
+      }
+    }
+  }
+
+  footer{
+    padding-top: 0;
+  }
+
+} 
