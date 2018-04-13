@@ -107,17 +107,17 @@ meta_keywords: "GoCD, continuous delivery, continuous delivery software, continu
         </section>
 
         <p>
-          To use a Value Stream Map in GoCD, you don't really need to do anything. If you've pipelines which use
+          To use a Value Stream Map in GoCD, you don't really need to do anything. If you have pipelines which use
           pipeline dependencies, then you can always get a VSM at the click of a button. Here is a dashboard view of
-          pipelines which map to the example shown in the concept. Clicking on the label (marked in red boxes) of any of
-          the pipelines shows the VSM from the perspective of that pipeline:
+          pipelines which map to the example shown in the concept. Clicking on the VSM link (marked in red boxes) in any of
+          the pipeline tiles shows the VSM from the perspective of that pipeline:
         </p>
         <figure>
           <%= image_tag "getting-started/gateways-to-VSM.png", {:title => "The labels of pipelines: gateways to VSM", :alt => "The labels of pipelines - gateways to VSM"} %>
-          <figcaption>The labels of pipelines: gateways to VSM</figcaption>
+          <figcaption>Navigating to the VSM</figcaption>
         </figure>
 
-        <p>Clicking on the label of the "Production" pipeline, takes you to its Value Stream Map, in which all of its upstream
+        <p>Clicking on the VSM link of the "Production" pipeline takes you to its Value Stream Map, in which all of its upstream
           pipelines and their source control materials are shown.</p>
 
         <figure>
@@ -126,8 +126,8 @@ meta_keywords: "GoCD, continuous delivery, continuous delivery software, continu
         </figure>
 
         <p>
-          Clicking on the label of the "Build" pipeline, either from the dashboard or the VSM view above, takes you to a
-          similar view with the perspective of the "Build" pipeline instance you clicked on. It is shown below. You can
+          Clicking on the VSM link of the "Build" pipeline, either from the dashboard or the VSM view above, takes you to a
+          similar view with the perspective of the "Build" pipeline instance. It is shown below. You can
           see that the source material of "CapacityTesting" pipeline is not shown, because it is not directly downstream
           of the "Build" pipeline.
         </p>
