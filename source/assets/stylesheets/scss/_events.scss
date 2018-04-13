@@ -1,13 +1,5 @@
 .events, .workshops {
 
-  .inner-banner{
-    background: #8A3494;
-
-    h1{
-      color: #fff;
-    }
-  }
-
   main {
     padding-top: 0;
   }
@@ -42,10 +34,9 @@
 }
 
 .demos {
-  background: #1C1D21;
-  // background: rgba(148, 57, 158, 1);
-  // background: linear-gradient(135deg, rgba(37, 26, 39, 0.95), 0%, rgba(56, 28, 60, 1) 100%);
-  // filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#94399e', endColorstr='#381c3c', GradientType=1);
+  background-image: url("/assets/images/halftone_gradient_background.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
   background-size: cover;
   text-align: center;
   padding: 40px 0;
@@ -54,7 +45,6 @@
   overflow: hidden;
 
   @media (min-width:$screen-tablet) {
-    // background: url(/assets/images/texture-bg-2.jpg) no-repeat center center;
     margin: 0 0 50px 0;
     background-size: cover;
   }
@@ -162,9 +152,9 @@
 
   .month {
     display: block;
-    font-size: 16px;
+    font-size: 24px;
     margin-bottom: 2px;
-    margin-top: 8px;
+    margin-top: 12px;
     font-weight: 600;
     line-height: 0px;
   }
