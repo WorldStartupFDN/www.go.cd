@@ -1,8 +1,16 @@
 main {
-    padding-top: 0;
-  }
+  padding-top: 0;
+  overflow: hidden;
+}
 
-
+h3 {
+  border: 1px solid red;
+  margin: 0px 0 30px;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+}
 
 .demos {
 
@@ -17,18 +25,7 @@ main {
   overflow: hidden;
 
   h3 {
-    margin: 0px 0 30px;
-    font-size: 30px;
-    color: #fff;
-    text-align: center;
-    text-transform: uppercase;
-    position: relative;
-
-    @media (min-width:$screen-tablet) {
-      margin: 30px 0;
-      font-size: 40px;
-      text-align: center;
-    }
+    color: #FFFFFF;
   }
 
   .intro-paragraph {
@@ -36,223 +33,226 @@ main {
     width: 70%;
 
     p {
+      font-size: 18px;
       color: #fff;
       text-align: left;
     }
   }
-}
 
-.list-container {
-  display: flex;
-  justify-content: center;
-}
+  .demos-list-container {
+    display: flex;
+    justify-content: center;
 
-.events-list {
+    .demos-list {
 
-  border: 1px solid white;
+      border: 1px solid white;
 
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
 
-  width: 70%;
+      width: 70%;
+      max-width: 1200px;
+      padding: 0;
 
-  @media (max-width: 410px) {
-    width: 100%;
-  }
-}
-
-.event-item {
-
-  display:block;
-  
-  border: 1px solid blue;
-
-  .datebox {
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-
-  padding-top: 20px;
-  padding-bottom: 8px;
-  padding-left: 10px;
-  padding-right: 10px;
-
-  align-content: center;
-
-  border: 1px solid red;
-
-  background: #ffffff;
-  border-top: 5px solid  #4adad9;
-  border-radius: 2px;
-  margin: 10px;
-  text-align: center;
-  color: #000;
-  width: 120px;
-  height: 120px;
-
-    .month {
-      display: block;
-      font-size: 24px;
-      font-family: URWGeometric-ExtraBold;
-      line-height: 0px;
-      text-transform: uppercase;
+      @media (max-width: 410px) {
+        width: 100%;
+      }
     }
 
-    .time {
-      display: block;
-      font-family: URWGeometric-SemiBold;
-      font-size: 14px;
-      line-height: 0px;
-      padding-top: 10px;
-    }
-
-    .location {
-      display: block;
-      font-size: 10px;
-      line-height: 0px;
-      padding-top: 5px;
-    }
-
-    .button-small {
+    .demos-item {
 
       display: block;
+      
+      border: 1px solid blue;
 
-      background-color: #4adad9;
-      font-size: 12px;
-      color: #000;
-      font-weight: 600;
+      .datebox {
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      padding-top: 20px;
+      padding-bottom: 8px;
+      padding-left: 10px;
+      padding-right: 10px;
+
+      align-content: center;
+
+      border: 1px solid red;
+
+      background: #ffffff;
+      border-top: 5px solid  #4adad9;
       border-radius: 2px;
-      text-transform: uppercase;
+      margin: 10px;
+      text-align: center;
+      color: #000;
+      width: 120px;
+      height: 120px;
+
+        .month {
+          display: block;
+          color: #000000;
+          font-size: 24px;
+          font-family: URWGeometric-ExtraBold;
+          line-height: 0px;
+          text-transform: uppercase;
+        }
+
+        .time {
+          display: block;
+          color: #000000;
+          font-family: URWGeometric-SemiBold;
+          font-size: 14px;
+          line-height: 0px;
+          padding-top: 10px;
+        }
+
+        .location {
+          display: block;
+          color: #000000;
+          font-size: 10px;
+          line-height: 0px;
+          padding-top: 5px;
+        }
+
+        .demo-button {
+
+          display: block;
+
+          background-color: #4adad9;
+          font-size: 12px;
+          color: #000000;
+          font-weight: 600;
+          border-radius: 2px;
+          text-transform: uppercase;
+        }
+      }
     }
   }
 }
 
 
 
+.events {
 
-.events-list,
-.dates, .workshops-list  {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
+  .events-list-container {
 
-.event, .workshop {
-  @media screen and (max-width:$screen-xs-max) {
-    margin-top: 50px;
-  }
+    display: flex;
+    justify-content: center;
 
-  .page-headings{
-    text-align: center;
-    border: 0px;
-    text-transform: uppercase;
-  }
+    .events-list {
 
-  .date,
-  .location {
-    display: inline-block;
+      border: 1px solid blue;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+      max-width: 1200px;
 
-    .fa {
-      color: $gray-light;
-      margin-right: 5px;
+      .event-item {
+        display: block;
+
+        border: 1px solid orange;
+
+        .event-card {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          border: 1px solid #9B9B9B;
+          border-radius: 2px;
+          width: 410px;
+          padding: 10px 10px 20px 10px;
+
+          color: #333333;
+
+          margin: 10px;
+
+          height: auto;
+
+          @media (max-width: 600px) {
+            width: 300px;
+          }
+
+          .event-header-container {
+            border: 1px solid blue;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            margin-bottom: 10px;
+
+            .event-title-container {
+
+              border: 1px solid red;
+
+              flex: 1 0 50%;
+
+              .event-title {
+                font-family: 'URWGeometric-ExtraBold';
+                font-size: 22px;
+              }
+            }
+          
+            .event-button {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+              border: 1px solid green;
+              width: 100px;
+              height: 30px;
+
+              background-color: #4adad9;
+              font-size: 12px;
+              color: #000;
+              font-weight: 600;
+              border-radius: 2px;
+              text-transform: uppercase;
+              text-align: center;
+              line-height: auto;
+            }
+          }
+
+          .event-description-container {
+
+            border: 1px solid purple;
+
+            margin-bottom: 10px;
+
+            p {
+              line-height: 100%;
+              margin-bottom: 0;
+            }
+
+          }
+
+          .event-details {
+
+            padding: 0;
+
+            border: 1px solid purple;
+
+            li {
+              // padding-bottom: 3px;
+              margin: 0;
+              list-style-type: none;
+              font-size: 14px;
+
+              .event-date {
+                display: inline-block;
+                width: 140px;
+              }
+
+              .event-location {
+                display: inline-block;
+              }
+            }
+          }
+        }
+      }
     }
-
   }
-
-  .date {
-    margin-right: 20px;
-  }
-
-}
-
-.events-list, .workshops-list  {
-  margin: 30px 0;
-
-  > li {
-    // margin-bottom: 20px;
-    // padding: 10px 0;
-    // border-bottom: 1px dashed #cccccc;
-  }
-
-}
-
-.details {
-  a.title {
-    font-size: 20px;
-    margin-bottom: 10px;
-    font-weight: 400;
-
-    .fa {
-      color: $secondary-color;
-      margin-top: 5px;
-    }
-
-  }
-
-}
-
-.dates {
-  margin: 10px 0px 10px;
-  @include flexbox;
-  @include flex-wrap(wrap);
-
-  li {
-    display: block;
-    font-size: 14px;
-    padding: 5px 0;
-    width: 100%;
-
-    @media only screen and (min-width:$screen-lg-desktop) {
-      display: block;
-      width: 100%;
-    }
-
-  }
-
-}
-
-.workshop-topic, .workshop-presenter {
-  display: inline-block;
-}
-
-.workshop-presenter {
-    margin-left: 20px;
-    font-style: italic;
-    font-size: 0.9em;
-}
-
-
-.events-list{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.event-card {
-  border: 1px solid #000;
-  height: auto;
-  margin: 0 0 10px 10px;
-  padding: 10px;
-  width: 100%;
-
-  @media (min-width: $screen-md){
-    width: 48%;
-  }
-}
-
-.event-header-container{
-  display: flex;
-  flex-wrap: wrap
-}
-
-.event-title{
-  font-family: 'URWGeometric-ExtraBold';
-  width: 70%;
-}
-
-.event-button{
-  margin: 20px 0;
-  width: 25%;
 }

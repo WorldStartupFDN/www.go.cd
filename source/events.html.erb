@@ -20,15 +20,15 @@ meta_keywords: "GoCD, continuous delivery, open source, community, events, learn
         The learning sessions are designed to help you get an overall view of the capabilities of GoCD and answer questions around how to configure your GoCD instance. Each session is one hour and includes a product overview, demo, and Q&amp;A session.
       </p>
     </div>
-    <div class="list-container">
-      <ul class="events-list">
+    <div class="demos-list-container">
+      <ul class="demos-list">
         <% data.webinars.each do |webinar| %>
-        <li class="event-item">
+        <li class="demos-item">
           <div class="datebox">
             <span class="month"><%= webinar.month %> <%= webinar.day %></span>
             <span class="time"><%= webinar.time %></span>
             <span class="location"><%= webinar.location %></span>
-            <a href="<%= webinar.url %>"" class="button-small">Register</a>
+            <a href="<%= webinar.url %>"" class="demo-button">Register</a>
           </div>
         </li>
         <% end %>
@@ -36,30 +36,49 @@ meta_keywords: "GoCD, continuous delivery, open source, community, events, learn
     </div>
   </div>
 
-  <div class="event container">
-    <div class="content-container">
-      <h1 class="page-headings">Events</h1>
+  <div class="events">
+    <h3>Events</h3>
+
+    <div class="events-list-container">
+
       <ul class="events-list">
         <% data.events.each_with_index do |event, index| %>
-        <li class="event-card">
-          <div class="details">
+
+        <li class="event-item">
+
+          <div class="event-card">
+
             <div class="event-header-container">
-              <h3 class="event-title"><%= event.title %></h3>
-              <a href="<%= event.url %>" class="brand-button__small event-button">Get Tickets</a>
+              <div class="event-title-container">
+                <span class="event-title"><%= event.title %></span>
+              </div>
+              <a href="<%= event.url %>" class="event-button">Get Tickets</a>
             </div>
-            <p><%= event.description %></p>
-            <ul class="dates">
+
+            <div class="event-description-container">
+              <p><%= event.description %></p>
+            </div>
+
+            <ul class="event-details">
               <% event.details.each do |detail| %>
               <li>
-                <div class="date"><i class="fa fa-calendar"></i> <%= detail.date %></div>
-                <div class="location"><i class="fa fa-map-marker"></i> <%= detail.location %></div>
+                <div class="event-date">
+                  <span class="fa fa-calendar"></span>
+                  <%= detail.date %>
+                </div>
+                <div class="event-location">
+                  <span class="fa fa-map-marker"></span>
+                  <%= detail.location %>
+                </div>
               </li>
               <% end %>
             </ul>
+
           </div>
         </li>
         <% end %>
       </ul>
     </div>
+
   </div>
 </main>
