@@ -4,7 +4,6 @@ main {
 }
 
 h3 {
-  border: 1px solid red;
   margin: 0px 0 30px;
   font-size: 30px;
   text-align: center;
@@ -17,6 +16,9 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  padding-top: 8vh;
+  padding-bottom: 10vh;
 
   background-image: url("/assets/images/halftone_gradient_background.jpg");
   background-repeat: no-repeat;
@@ -32,6 +34,8 @@ h3 {
 
     width: 70%;
 
+    padding-bottom: 2vh;
+
     p {
       font-size: 18px;
       color: #fff;
@@ -44,8 +48,6 @@ h3 {
     justify-content: center;
 
     .demos-list {
-
-      border: 1px solid white;
 
       display: flex;
       flex-wrap: wrap;
@@ -64,8 +66,6 @@ h3 {
 
       display: block;
       
-      border: 1px solid blue;
-
       .datebox {
 
       display: flex;
@@ -78,8 +78,6 @@ h3 {
       padding-right: 10px;
 
       align-content: center;
-
-      border: 1px solid red;
 
       background: #ffffff;
       border-top: 5px solid  #4adad9;
@@ -134,7 +132,10 @@ h3 {
 
 
 
-.events {
+.events-section {
+
+  padding-top: 8vh;
+  padding-bottom: 10vh;
 
   .events-list-container {
 
@@ -143,7 +144,6 @@ h3 {
 
     .events-list {
 
-      border: 1px solid blue;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
@@ -152,19 +152,19 @@ h3 {
       max-width: 1200px;
 
       .event-item {
-        display: block;
+        display: flex;
 
-        border: 1px solid orange;
+        justify-content: stretch;
 
         .event-card {
           display: flex;
           flex-direction: column;
-          justify-content: space-between;
+          justify-content: flex-start;
 
           border: 1px solid #9B9B9B;
           border-radius: 2px;
           width: 410px;
-          padding: 10px 10px 20px 10px;
+          padding: 15px 15px 15px 15px;
 
           color: #333333;
 
@@ -177,16 +177,13 @@ h3 {
           }
 
           .event-header-container {
-            border: 1px solid blue;
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
 
-            margin-bottom: 10px;
+            margin-bottom: 15px;
 
             .event-title-container {
-
-              border: 1px solid red;
 
               flex: 1 0 50%;
 
@@ -201,7 +198,6 @@ h3 {
               align-items: center;
               justify-content: center;
 
-              border: 1px solid green;
               width: 100px;
               height: 30px;
 
@@ -218,9 +214,7 @@ h3 {
 
           .event-description-container {
 
-            border: 1px solid purple;
-
-            margin-bottom: 10px;
+            margin-bottom: 15px;
 
             p {
               line-height: 100%;
@@ -232,8 +226,6 @@ h3 {
           .event-details {
 
             padding: 0;
-
-            border: 1px solid purple;
 
             li {
               // padding-bottom: 3px;
