@@ -138,8 +138,9 @@
 }
 
 .content-card-six-column {
-    padding-left: 15px;
-    padding-right: 15px;
+
+    padding-left: 10px;
+    padding-right: 10px;
     @media (max-width: $tablet_max-width) {
         @include grid-column(1, $single-column);
     }
@@ -368,12 +369,8 @@
 }
 
 .justified-content {
+
   text-align: justify;
   padding-left: 10px;
-  padding-right: 20px;
-}
-
-.align-right {
-    float: right;
-    clear: both;
+  padding-right: 10px;
 }
