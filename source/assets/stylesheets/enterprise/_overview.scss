@@ -14,7 +14,7 @@
     }
     h1 {
         font-family: $default-font-extra-bold;
-        color: $light;
+        color: $light !important;
         font-family: $default-font-extra-bold;
         font-size: 2.5em;
         line-height: .9em;
@@ -36,7 +36,14 @@
     }
 }
 
-.features {}
+.features {
+
+    hr{
+        height: 3px;
+        background-color: $mobile-border-color;
+        margin: 50px 0;
+    }
+}
 
 .enterprise-overview {
     overflow-x: hidden; // Global page elements
@@ -57,4 +64,23 @@
         padding-top: 0;
         overflow: hidden;
     }
+}
+
+.enterprise-customers{
+
+    .flex-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    
+        .flex-item{
+            margin: 10px 5px; 
+            width: 40%;
+
+            @media (min-width: $screen-lg){
+                width: 20%;
+            }
+        }
+    }
+    
 }
