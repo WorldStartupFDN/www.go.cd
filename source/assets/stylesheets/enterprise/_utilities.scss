@@ -330,7 +330,7 @@
 }
 
 .default-link-text {
-    border-bottom: 2px solid $dark-secondary;
+    /* border-bottom: 2px solid $dark-secondary; */
     color: $dark;
     display: block;
     font-size: 18px;
@@ -338,6 +338,7 @@
     margin: 20px auto;
     padding-bottom: 5px;
     text-transform: capitalize;
+    text-decoration: underline;
     width: 200px;
 }
 
