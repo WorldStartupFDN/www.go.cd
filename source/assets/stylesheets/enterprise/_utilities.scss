@@ -103,6 +103,7 @@
 }
 
 .grid-container {
+
     @include grid-container;
     margin-right: -15px;
     margin-left: -15px;
@@ -111,9 +112,13 @@
 }
 
 .content-card-three-column {
+    
+    border: 1px solid red;    
+
     @include grid-column(1, $single-column);
-    padding-left: 15px;
-    padding-right: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+    
     @media (min-width: $screen-md) {
         @include grid-column(1, $three-column);
     }
