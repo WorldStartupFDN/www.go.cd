@@ -292,7 +292,7 @@ ul.level1 {
 .help .toplink_help,
 .resources .toplink_help,
 .download .link_download,
-.enterprise .link_enterprise {
+.enterprise-page .link_enterprise {
     @media screen and (max-width: $screen-xs-max) {
         color: $primary-color !important;
     }
