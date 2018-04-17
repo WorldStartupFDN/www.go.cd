@@ -6,7 +6,7 @@
 // 2. Nest the style's in if only required at most
 // 3. Use more generic classnames
 // 4. Follow BEM model in writing styles
-@import 'enterprise/enterprise_variables';
+
 
 .banner-title {
     font-family: $default-font-extra-bold;
@@ -17,31 +17,6 @@
     text-transform: uppercase;
 }
 
-.header-large {
-    font-family: $default-font-extra-bold;
-    padding: 20px 0;
-    text-align: center;
-    font-size: 25px;
-    @media (min-width: $screen-sm) {
-        font-size:30px;
-    }
-    @media (min-width: $screen-md) {
-        margin: 30px 0;
-    }
-    @media (min-width:$screen-xl) {
-        font-size: 40px;
-        padding: 30px 0;
-    }
-}
-
-.header-medium {
-    font-family: $default-font-normal-bold;
-}
-
-.text-normal {
-    font-family: $default-font-normal;
-}
-
 .text-center {
     text-align: center;
 }
@@ -50,29 +25,21 @@
     color: #4ad9d9;
 }
 
-.header-container {
-    @include grid-column(10);
-    margin: 0 auto;
-    margin-left: 10%;
-    @media(max-width: $screen-md) {
-        @include grid-column(12);
-        float: none;
-        margin: 0 auto;
-    }
-}
 
 .grid-container {
 
+    border: 1px dotted red;
+
     @include grid-container;
-    margin-right: -15px;
-    margin-left: -15px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    // margin-right: -15px;
+    // margin-left: -15px;
+    // margin-top: 15px;
+    // margin-bottom: 15px;
 }
 
 .content-card-three-column {
     
-    border: 1px solid red;    
+    border: 1px dotted green;    
 
     @include grid-column(1, $single-column);
         padding-left: 15px;
@@ -227,58 +194,12 @@
 }
 
 .content-card {
+
+    border: 1px dotted blue;
+
     width: 100%;
     margin: 0 0 30px;
     overflow: hidden;
-}
-
-.content-card-title {
-    font-family: $default-font-normal-bold;
-    margin: 0 0 10px 0;
-    @media (max-width: $screen-md-min) {
-        padding-left: 15px;
-        text-align: left;
-        font-size: 17px;
-        float: right;
-        width: 80%;
-    }
-    @media (min-width:$screen-md) {
-        font-size: 18px;
-    }
-    @media (min-width:$screen-lg) {
-        font-size: 28px;
-    }
-}
-
-.content-card_img {
-    @media (max-width: $screen-md-min) {
-        width: 20%;
-        margin-top: 25px;
-        clear: left;
-        float: left;
-    }
-    @media (min-width:$screen-md) {
-        max-width: 100%;
-        width: 60%;
-        margin: 30px auto;
-        display: block;
-    }
-}
-
-.content-card_txt {
-    @media (max-width: $screen-md-min) {
-        width: 80%;
-        padding-left: 15px;
-        float: right;
-    }
-    @media (min-width:$screen-md) {
-        font-size: 14px;
-        line-height: 20px;
-        
-    }
-    @media (min-width:$screen-lg) {
-        font-size: 16px;
-    }
 }
 
 .header-padding {

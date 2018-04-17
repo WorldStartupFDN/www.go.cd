@@ -31,6 +31,7 @@
             color: $brand-secondary;
         }
     }
+
     .break {
         display: block;
     }
@@ -38,33 +39,67 @@
 
 .features {
 
-    hr{
-        height: 3px;
-        background-color: $mobile-border-color;
-        margin: 50px 0;
+    Border: 1px solid orange;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .features-wrap {
+
+        border: 1px solid blue;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 1200px;
+
+        .feature-card {
+
+        border: 1px solid red;
+
+        display: flex;
+        flex-direction: column;
+
+        width: 340px;
+        // min-height: 350px;
+
+            .feature-card-title {
+
+                border: 1px solid yellow;
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-end;
+
+                margin-bottom: 20px;
+
+                h3 {
+                    font-family: $default-font-normal-bold;
+                    text-align: center;
+                    margin: 0;
+                    font-size: 28px;
+                    text-transform: capitalize;
+                }
+            }
+
+            .feature-card_img {
+
+                border: 1px solid green;
+                height: 140px;
+                margin-bottom: 20px;
+
+            }
+
+            .feature-card_txt {
+                padding: 0 10px 0 10px;
+                text-align: justify;
+            }
+        }
     }
 }
 
-.enterprise-overview {
-    overflow-x: hidden; // Global page elements
-    p {
-        line-height: 1.5em;
-        font-weight: 400;
-    }
-    .hr {
-        height: 2px;
-        width: 100%;
-        background-color: #eee;
-        margin-bottom: 1em;
-    }
-    .banner-content {
-        display: none;
-    }
-    .enterprise main {
-        padding-top: 0;
-        overflow: hidden;
-    }
-}
 
 .enterprise-customers{
 
