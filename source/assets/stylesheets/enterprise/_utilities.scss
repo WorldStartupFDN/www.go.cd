@@ -183,15 +183,6 @@
     }
 }
 
-.content-card {
-
-    border: 1px dotted blue;
-
-    width: 100%;
-    margin: 0 0 30px;
-    overflow: hidden;
-}
-
 .header-padding {
     @media (min-width: $screen-md) {
         padding-top: $container_padding_tablet_desktop;
