@@ -1,56 +1,68 @@
 <%= partial 'partials/secondarynav' %>
 
-<div class="enterprise">
+<div>
   <div class="container">
     <div class="grid-container contact-top-cards">
-    <div class="content-card-six-column">
-      <div class="header-padding">
-        <h1> CONTACT US</h1>
-        <h2 class="display-desktop">Intrested in our enterprise offering?</h2>
-        <p class="display-mobile">Intrested in our enterprise offering?</p>
-        <p>Connect with us so we can learn more about how to help you.</p>
-        <p>You can also email us directly at <span class="strong">support@thoughtworks.com</span></p>
+      <div class="content-card-six-column">
+        <div class="header">
+          <h1>CONTACT US</h1>
+          <h2 class="display-desktop">Interested in our enterprise offering?</h2>
+          <p class="display-mobile">Interested in our enterprise offering?</p>
+          <p>Connect with us so we can learn more about how to help you.</p>
+          <p>You can also email us directly at <span class="strong">support@thoughtworks.com</span></p>
+        </div>
+      </div>
+
+      <div class="content-card-six-column enterprise-marketo-style">
+        <script type="text/javascript">
+              function initMarketoForm() {
+                MktoForms2.loadForm("//app-e.marketo.com", "199-QDE-291", 7582);
+              }
+        </script>
+        <script async="true" src="//app-e.marketo.com/js/forms2/js/forms2.min.js" onload="initMarketoForm()"></script>
+        <form id="mktoForm_7582"></form>
       </div>
     </div>
-      <div class="content-card-six-column">
-            <script type="text/javascript">
-            function initMarketoForm() {
-              MktoForms2.loadForm("//app-e.marketo.com", "199-QDE-291", 7582);
-            }
-          </script>
-          <script async="true" src="//app-e.marketo.com/js/forms2/js/forms2.min.js" onload="initMarketoForm()"></script>
-          <form id="mktoForm_7582"></form>
-          </div>
-    </div>
   </div>
+
   <div class="contact-section">
-  <div class="container">
-    <h1 class="text-center">We’re in your neighborhood!</h1>
-    <div class="grid-container">
-      <div class="content-card-three-column contact-card">
-        <h3 class="bold-text text-center">America Hours</h3>
-        <h2 class="text-center bold-text">Craig</h2>
-        <img class="img-container img-rounded_bordered enterprise-stock-head-image" src= "/assets/images/enterprise-sales-craig.jpg"  alt="placeholder"/>
+
+    <h1>We’re in your neighborhood!</h1>
+
+    <div class="contact-wrap container">
+
+      <div class="contact-card">
+        <div class="contact-card-header">
+          <h3>Americas</h3>
+          <h2>Craig</h2>
+        </div>
+
+        <img class="sales-portrait" src= "/assets/images/enterprise-sales-craig.jpg"  alt="placeholder"/>
         <h3 class="text-center bold-text">+1 415 463 1900</h3>
       </div>
 
-      <div class="content-card-three-column contact-card">
-        <h3 class="bold-text text-center">Europe Hours</h3>
-        <h2 class="text-center bold-text"> Alagu </h2>
-        <img class="img-container img-rounded_bordered enterprise-stock-head-image" src="/assets/images/enterprise-sales-al.jpg" alt="placeholder"/>
-        <h3 class="text-center bold-text">+44 (0) 20 7497 4500</h3>
+      <div class="contact-card">
+
+        <div class="contact-card-header">
+          <h3>Europe</h3>
+          <h2>Alagu</h2>
+        </div>
+
+        <img class="sales-portrait" src="/assets/images/enterprise-sales-al.jpg" alt="placeholder"/>
+        <h3>+44 (0) 20 7497 4500</h3>
       </div>
 
-      <div class="content-card-three-column contact-card">
-        <h3 class="bold-text text-center">Asia, Australia &amp; Africa Hours</h3>
-        <h2 class="text-center bold-text">Rupesh</h2>
-        <img class="img-container img-rounded_bordered enterprise-stock-head-image" src="/assets/images/enterprise-sales-rupesh.jpg" alt="placeholder"/>
-        <h3 class="text-center bold-text">+91 80 4323 3722</h3>
-      </div>
+      <div class="contact-card">
+        <div class="contact-card-header">
+          <h3>Asia, Australia &amp; Africa</h3>
+          <h2>Rupesh</h2>
+        </div>
 
+        <img class="sales-portrait" src="/assets/images/enterprise-sales-rupesh.jpg" alt="placeholder"/>
+        <h3>+91 80 4323 3722</h3>
+      </div>
     </div>
-    </div>
-    </div>
-  
+  </div>
+
   <script src="/assets/javascripts/marketo_popover.js"></script>
 </div>

@@ -6,60 +6,60 @@
 @import 'enterprise/support';
 @import 'enterprise/plugins';
 @import 'enterprise/contact';
-// .enterprise-quotes{
-//   margin-top: 40px;
+
+// .enterprise h1 {
+//     color: #333;
 // }
 
-.enterprise h1{
-    color: #333;
-}
+.enterprise-marketo-style {
 
-.enterprise-stock-head-image {
-    width: 140px;
-    height: 140px;
-    @media (max-width: $tablet_max-width) {
-        float: none !important;
-    }
-}
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-.enterprise {
-
-  .mktoForm{
+  .mktoForm {
     width: 80% !important;
   }
 
-  .mktoFormCol{
+  .mktoFormCol {
     width: 100% !important;
   }
-   .mktoFieldWrap{
+  
+  .mktoFieldWrap {
     width: 100% !important;
-   }
+  }
 
-  .mktoButtonWrap{
+  .mktoButtonWrap {
     margin-left: 0 !important;
     width: 100%;
   }
 
-  .mktoButtonRow{
+  .mktoButtonRow {
     width: 100%;
   }
-  
-  .mktoButton{
-    background: $brand-secondary;
-    display: block;
-    margin: 5% auto !important;
-    // padding: 5px 50px;
-    font-family: $default-font-normal-bold !important;
-    font-size: 22px;
-    text-transform: uppercase;
-    width: 150px;
-    height: 51px;
-    @media (min-width: $screen-lg){
-      width: 322px;
+
+  .mktoFormRow {
+    margin: 0;
+
+    input,
+    select {
+      outline: none;
+      box-shadow: none;
+      border: 1px solid #979797;
+      background: transparent;
+      border-radius: 6px;
+      padding: 10px 20px;
+      height: 34px;
+      width: 100% !important;
+    }
+
+    @media (min-width: $screen-md) {
+      margin: 0;
     }
   }
+  
 
-  .mktoField{
+  .mktoField {
     border-radius: 3px;
     box-shadow: none;
     outline: none;
@@ -73,87 +73,53 @@
     text-transform: uppercase;
   }
 
-  .cf_sign_on{
-    display: none;
+  .mktoButton {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      background: $brand-secondary;
+      font-family: $default-font-normal-bold !important;
+      font-size: 22px;
+      text-transform: uppercase;
+      width: 100%;
+
+      &:hover {
+        background: $success;
+        color: #FFFFFF;
+      }
   }
 
-  .mktoFormRow {
-    margin: 25px 0 15px 0;
+  .mktoLabel {
+      font-family: $default-font-normal-bold !important;
+      font-size: 16px;
+      text-transform: uppercase;
+  }
 
-    input, select{
-      outline: none;
-      box-shadow: none;
-      border: 1px solid #979797;
-      background: transparent;
-      border-radius: 6px;
-      padding: 10px 20px;
-      height: 34px;
-      width: 100% !important;
-    }
+  .cf_sign_on {
+      display: none;
+  }
 
-    .mktoForm {
-        width: 80% !important;
+  .mktoButton {
+    background: $brand-secondary;
+    border: none;
+    display: block;
+    margin: 5% auto !important;
+    // padding: 5px 50px;
+    font-family: $default-font-normal-bold !important;
+    font-size: 22px;
+    text-transform: uppercase;
+    width: 150px;
+    height: 51px;
+    @media (min-width: $screen-lg){
+      width: 322px;
     }
+  }
 
-    .mktoFormCol {
-        width: 100% !important;
-    }
-
-    .mktoFieldWrap {
-        width: 100% !important;
-    }
-
-    .mktoButtonWrap {
-        margin-left: 0 !important;
-        width: 100%;
-    }
-
-    .mktoButton {
-        background: $brand-secondary;
-        display: block;
-        margin: 15% 25% !important;
-        padding: 5px 50px;
-        font-family: $default-font-normal-bold !important;
-        font-size: 22px;
-        text-transform: uppercase;
-        width: 100%;
-    }
-
-    .mktoField {
-        border-radius: 3px;
-        box-shadow: none;
-        outline: none;
-        padding: 5px;
-        width: 100% !important;
-    }
-
-    .mktoLabel {
-        font-family: $default-font-normal-bold !important;
-        font-size: 16px;
-        text-transform: uppercase;
-    }
-
-    .cf_sign_on {
-        display: none;
-    }
-
-    .mktoFormRow {
-        margin: 25px 0 15px 0;
-        input,
-        select {
-            outline: none;
-            box-shadow: none;
-            border: 1px solid #979797;
-            background: transparent;
-            border-radius: 6px;
-            padding: 10px 20px;
-            height: 34px;
-            width: 100% !important;
-        }
-        @media (min-width: $screen-md) {
-            margin: 20px 0 10px 0;
-        }
-    }
+  .mktoForm.mktoLayoutAbove .mktoField,
+  .mktoForm.mktoLayoutAbove .mktoLogicalField {
+    border: 1px solid #ccc;
+  }
 }
 
 .enterprise-addons-keypoints {
@@ -161,8 +127,3 @@
     padding-left: 16px;
 }
 
-.mktoForm.mktoLayoutAbove .mktoField,
-.mktoForm.mktoLayoutAbove .mktoLogicalField {
-    border: 1px solid #ccc;
-  }
-}

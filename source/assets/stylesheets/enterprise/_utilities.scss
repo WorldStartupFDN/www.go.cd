@@ -103,6 +103,7 @@
 }
 
 .grid-container {
+
     @include grid-container;
     margin-right: -15px;
     margin-left: -15px;
@@ -111,9 +112,13 @@
 }
 
 .content-card-three-column {
+    
+    border: 1px solid red;    
+
     @include grid-column(1, $single-column);
-    padding-left: 15px;
-    padding-right: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+    
     @media (min-width: $screen-md) {
         @include grid-column(1, $three-column);
     }
@@ -138,8 +143,9 @@
 }
 
 .content-card-six-column {
-    padding-left: 15px;
-    padding-right: 15px;
+
+    padding-left: 10px;
+    padding-right: 10px;
     @media (max-width: $tablet_max-width) {
         @include grid-column(1, $single-column);
     }
@@ -338,7 +344,7 @@
 }
 
 .default-link-text {
-    border-bottom: 2px solid $dark-secondary;
+    /* border-bottom: 2px solid $dark-secondary; */
     color: $dark;
     display: block;
     font-size: 18px;
@@ -346,6 +352,7 @@
     margin: 20px auto;
     padding-bottom: 5px;
     text-transform: capitalize;
+    text-decoration: underline;
     width: 200px;
 }
 
@@ -375,12 +382,8 @@
 }
 
 .justified-content {
+
   text-align: justify;
   padding-left: 10px;
-  padding-right: 20px;
-}
-
-.align-right {
-    float: right;
-    clear: both;
+  padding-right: 10px;
 }
