@@ -1,4 +1,5 @@
 .enterprise-page {
+
     @import 'enterprise/enterprise_variables';
     @import 'enterprise/utilities';
     @import 'enterprise/overview';
@@ -6,6 +7,7 @@
     @import 'enterprise/support';
     @import 'enterprise/plugins';
     @import 'enterprise/contact';
+
     .enterprise-marketo-style {
         display: flex;
         flex-direction: column;

@@ -140,7 +140,7 @@
         height: 37px;
         font-size: 22px;
         width: 424px;
-        margin: 40px auto 20px;
+        margin: 40px auto 40px auto;
     }
 }
 
@@ -210,7 +210,6 @@
     padding-bottom: 5px;
     text-transform: capitalize;
     text-decoration: underline;
-    width: 200px;
 }
 
 .mobile-border {
@@ -226,14 +225,14 @@
 
 .display-desktop {
     display: block;
-    @media( max-width: $screen-md) {
+    @media (max-width: $screen-md) {
         display: none;
     }
 }
 
 .display-mobile {
     display: none;
-    @media( max-width: $screen-md) {
+    @media (max-width: $screen-md) {
         display: block;
     }
 }
@@ -242,4 +241,210 @@
   text-align: justify;
   padding-left: 10px;
   padding-right: 10px;
+}
+
+.page-bottom-margin {
+    height: 10vh;
+}
+
+.general-terms {
+
+    .section2 {
+
+        .inner {
+          padding: 3vh 0 5px 3vh;
+
+          .title {
+            font-weight: bold;
+          }
+
+          a {
+            overflow-wrap: break-word;
+          }
+
+          ol {
+            counter-reset: section;
+            list-style-type: none;
+
+            li {
+              position: relative;
+            }
+
+            li::before {
+              counter-increment: section;
+              position: absolute;
+              right: 100%;
+            }
+
+            &.level1 > li::before {
+              content: counters(section,".") ".";
+            }
+
+            &.level2 > li::before {
+              content: counters(section,".") " ";
+            }
+
+            &.level1 > li {
+              margin-top: 2em;
+            }
+
+            &.level1 > li::before {
+              // font-size: $title_size;
+              margin-right: 10px;
+            }
+
+            &.level2 {
+              margin-left: 2em;
+              margin-top: 1em;
+
+              li {
+                padding-left: 8px;
+                padding-bottom: 5px;
+              }
+
+              .level3 {
+                margin-left: 2em;
+                margin-top: 1em;
+              }
+            }
+
+            .title {
+              width: 100%;
+            
+            }
+
+            strong {
+              font-weight: bold;
+            }
+          }
+
+          .services {
+            padding-bottom: 2em;
+
+            .header {
+              font-weight: bold;
+              margin-top: 1em;
+
+              &.row {
+                border-bottom: 2px solid black;
+              }
+            }
+
+            .row {
+              border-bottom: 1px solid #CCC;
+
+              text-align: left;
+              padding: 12px 0;
+            }
+
+            .level {
+              font-weight: bold;
+            }
+
+            .premium {
+
+            }
+          }
+        }
+    }
+}
+
+.eula {
+     .section2 {
+
+    .inner {
+
+    .title {
+        font-weight: bold;
+    }
+
+      padding: 3vh 0 5px 3vh;
+
+
+      a {
+        overflow-wrap: break-word;
+      }
+
+      ol {
+        counter-reset: section;
+        list-style-type: none;
+
+        li {
+          position: relative;
+        }
+
+        li::before {
+          counter-increment: section;
+          position: absolute;
+          right: 100%;
+        }
+
+        &.level1 > li::before {
+          content: counters(section,".") ".";
+        }
+
+        &.level2 > li::before {
+          content: counters(section,".") " ";
+        }
+
+        &.level1 > li {
+          margin-top: 2em;
+        }
+
+        &.level1 > li::before {
+          margin-right: 10px;
+        }
+
+        &.level2 {
+          margin-left: 2em;
+          margin-top: 1em;
+
+          li {
+            padding-left: 8px;
+            padding-bottom: 5px;
+          }
+
+          .level3 {
+            margin-left: 2em;
+            margin-top: 1em;
+          }
+        }
+
+        .title {
+          width: 100%;
+        }
+
+        strong {
+          font-weight: bold;
+        }
+      }
+
+      .services {
+        padding-bottom: 2em;
+
+        .header {
+          font-weight: bold;
+          margin-top: 1em;
+
+          &.row {
+            border-bottom: 2px solid black;
+          }
+        }
+
+        .row {
+          border-bottom: 1px solid #CCC;
+
+          text-align: left;
+          padding: 12px 0;
+        }
+
+        .level {
+          font-weight: bold;
+        }
+
+        .premium {
+        }
+      }
+    }
+}
 }

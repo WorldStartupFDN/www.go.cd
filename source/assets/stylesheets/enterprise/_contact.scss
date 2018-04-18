@@ -3,7 +3,8 @@
 } 
 
 .contact-top-cards {
-  padding-top: 50px;
+
+  margin-bottom: 5vh;
 
   @media (max-width: $screen-md) {
     h1{
@@ -23,6 +24,12 @@
       font-family: $default-font-normal-bold;
       font-size: 22px;
       margin-top: 25px;
+    }
+  }
+
+  .contact-marketo {
+    @media (min-width: $screen-md) {
+      margin-top: 50px;
     }
   }
 }
@@ -71,9 +78,6 @@
 
     h1, h2, h3 {
       color: $light;
-    }
-
-    @media (max-width: 900px) {
     }
 
 
