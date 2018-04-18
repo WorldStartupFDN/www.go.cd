@@ -17,9 +17,6 @@
 }
 
 .grid-container {
-
-    border: 1px dotted red;
-
     @include grid-container;
     // margin-right: -15px;
     // margin-left: -15px;
@@ -28,8 +25,7 @@
 }
 
 .content-card-three-column {
-    
-    border: 1px dotted green;    
+
 
     @include grid-column(1, $single-column);
         padding-left: 15px;

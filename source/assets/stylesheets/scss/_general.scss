@@ -5,15 +5,11 @@ body {
     font-weight: 300;
     line-height: 22px;
     position: relative;
-    margin: 66px 0 0 0;
-
-    //For proper font rendering
+    margin: 66px 0 0 0; //For proper font rendering
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-
     @media (min-width: $screen-tablet) {
-        font-size: 16px;
-        // line-height: 26px;
+        font-size: 16px; // line-height: 26px;
     }
 }
 
@@ -88,7 +84,6 @@ img {
     @media (min-width: $screen-tablet) {
         bottom: 30px;
     }
-
     &:hover {
         transition: all 0.5s ease-in-out;
         color: $primary-color;
@@ -294,5 +289,36 @@ $btn-dark-border: #333;
 @media (min-width: $screen-xl) {
     .container {
         max-width: 1140px;
+    }
+}
+
+$nav-active: #4AD9D9;
+.enterprise_index {
+    .link_overview {
+        color: $nav-active !important; // had to use this because of other styles
+    }
+}
+
+.enterprise_addons {
+    .link_addons {
+        color: $nav-active !important; // had to use this because of other styles
+    }
+}
+
+.enterprise_support {
+    .link_support {
+        color: $nav-active !important; // had to use this because of other styles
+    }
+}
+
+.enterprise_pricing {
+    .link_pricing {
+        color: $nav-active !important; // had to use this because of other styles
+    }
+}
+
+.enterprise_contact {
+    .link_contact {
+        color: $nav-active !important; // had to use this because of other styles
     }
 }

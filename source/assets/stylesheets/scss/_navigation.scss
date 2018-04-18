@@ -26,7 +26,7 @@ $navbar-dark: #1B1D21;
 
 .mainnav {
     float: right;
-    @media screen and (max-width: $screen-tablet) {
+    @media screen and (max-width: $screen-sm-min) {
         display: block;
         position: absolute;
         z-index: $mobile-nav;
@@ -89,12 +89,10 @@ $navbar-dark: #1B1D21;
     &:hover {
         >a {
             transition: all 0.3s ease;
-            position: relative;
-            transform: translateY(-3px);
+            position: relative; // transform: translateY(-3px);
         }
     }
 }
-
 
 /*nav dropdown*/
 
@@ -177,7 +175,6 @@ ul.level1 {
         }
     }
 }
-
 
 /* responsive styles */
 
@@ -292,7 +289,7 @@ ul.level1 {
 .help .toplink_help,
 .resources .toplink_help,
 .download .link_download,
-.enterprise-page .link_enterprise {
+.enterprise .link_enterprise {
     @media screen and (max-width: $screen-xs-max) {
         color: $primary-color !important;
     }
@@ -321,7 +318,8 @@ ul.level1 {
 .events .toplink_contribute,
 .plugins .toplink_contribute,
 .help .toplink_help,
-.resources .toplink_help {
+.resources .toplink_help,
+{
     @media screen and (max-width: $screen-xs-max) {
         color: #333 !important;
     }
@@ -332,7 +330,8 @@ ul.level1 {
 .help .getting-started,
 .events .link_events,
 .plugins .link_plugins,
-.resources .link_resources {
+.resources .link_resources,
+ {
     @media screen and (max-width: $screen-xs-max) {
         color: $primary-color !important;
     }
@@ -378,33 +377,33 @@ ul.level1 {
     }
 }
 
-.mainnav {
-    .level0 {
-        a {
-            position: relative;
-            overflow: hidden;
-            &::before {
-                display: none;
-            }
-            &::after {
-                content: '';
-                position: absolute;
-                bottom: -50%;
-                left: 0;
-                width: 100%;
-                height: 3px;
-                background-color: #c0c0c0;
-                transition: all 0.5s;
-
-                @media(max-width: $screen-md){
-                    display: none;
-                }
-            }
-            &:hover {
-                &::after {
-                    bottom: 5px;
-                }
-            }
-        }
-    }
-}
+// .mainnav {
+//     .level0 {
+//         a {
+//             position: relative;
+//             overflow: hidden;
+//             &::before {
+//                 display: none;
+//             }
+//             &::after {
+//                 content: '';
+//                 position: absolute;
+//                 bottom: -5px;
+//                 left: 0;
+//                 width: 100%;
+//                 height: 3px;
+//                 background-color: $primary-color;
+//                 transition: all 0.2s ease-in-out;
+//                 @media(max-width: $screen-md) {
+//                     display: none;
+//                 }
+//             }
+//             &:hover {
+//                 &::after {
+//                     bottom: 0px;
+//                     transition: all 0.2s ease-in-out;
+//                 }
+//             }
+//         }
+//     }
+// }
