@@ -8,8 +8,13 @@ $secondary-nav-color: #25282D;
 $navbar-dark: #1B1D21;
 .top .navbtn {
     float: right;
-    margin: 2px 3px 0 0;
-    padding: 5px;
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+
     color: $navbutton;
     border-radius: 5px;
     text-decoration: none;
@@ -211,15 +216,10 @@ ul.level1 {
 .menu {
     position: relative;
     display: block;
-    width: 40px;
-    height: 30px;
-    margin: 10px 0 0 10px;
 }
 
 .menu span {
     margin: 0px auto;
-    position: relative;
-    top: 12px;
 }
 
 .menu span:before,
