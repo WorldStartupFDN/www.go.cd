@@ -322,3 +322,12 @@ $nav-active: #4AD9D9;
         color: $nav-active !important; // had to use this because of other styles
     }
 }
+
+.form-loading-error {
+    display: none;
+
+    color: #E74C3C;
+    font-size: 22px;
+    padding: .5em;
+    border: 2px solid #E74C3C;
+}

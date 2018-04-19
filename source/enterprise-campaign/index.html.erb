@@ -34,7 +34,7 @@ show_features: true
     <div class="feature-section">
       <div class="container">
         <div class="row">
-        
+
           </div>
         </div>
 
@@ -100,11 +100,11 @@ show_features: true
           <script src="//app-e.marketo.com/js/forms2/js/forms2.min.js"></script>
           <form id="mktoForm_7582"></form>
           <div class="form-loading-error">
-            <p>It looks like our signup form was blocked by an adblocker in your browser! Please email us directly or pause your adblocker to use the form.</p>
+            It looks like our signup form was blocked by an adblocker in your browser! Please email us directly or pause your adblocker to use the form.
           </div>
         </div>
       </div>
     </div>
-    <script src="/assets/javascripts/marketo_popover.js"></script>
+    <script src="/assets/javascripts/marketo_popover.js" onload="new MarketoForm().init(7582)"></script>
   <% end %>
 </div>
