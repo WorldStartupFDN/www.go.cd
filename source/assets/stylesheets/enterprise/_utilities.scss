@@ -126,14 +126,20 @@
     border: 0;
     cursor: pointer;
     transition: all 0.25s;
-    
-    &:focus,
+
     &:active {
+        background: #36b1bf;
+        color: #FFFFFF;
         outline: 0;
     }
     
-    &:hover{
+    &:hover {
         opacity: 0.8;
+        outline: 0;
+    }
+
+    &:focus {
+      outline: 0;
     }
 
     @media(min-width: $screen-md) {
