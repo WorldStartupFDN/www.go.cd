@@ -295,7 +295,7 @@ ul.level1 {
     }
     @media (min-width:$screen-tablet) {
         color: #fff !important;
-        &:before {
+        &:before, &:hover:before {
             content: "";
             position: absolute;
             height: 0;
