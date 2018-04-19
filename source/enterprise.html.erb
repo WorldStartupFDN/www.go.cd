@@ -1,4 +1,3 @@
-
 <div class="enterprise-page">
 
 <%= partial 'partials/secondarynav' %>
@@ -46,7 +45,10 @@
         </div>
       </div>
 
-      <button class="button-brand">Get Started</button>
+      <% link_to '/enterprise/contact/index.html' do %>
+          <button class="button-brand">Get Started</button>
+      <% end %>
+
       <hr/>
     </div>
   </section>
@@ -85,5 +87,3 @@
 
   <script src="/assets/javascripts/marketo_popover.js" onload="new MarketoForm().init(7582)"></script>
 </div>
-
-

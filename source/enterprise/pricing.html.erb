@@ -34,13 +34,17 @@
           <tr>
             <td>500+</td>
             <td>Support + Add-ons &amp; Plugins</td>
-            <td><a href="/enterprise/contact.html">Let's Talk</a></td>
+            <td><%= link_to "Let's Talk", '/enterprise/contact/index.html' %></td>
             </tr>
         </table>
       </div>
-      <a href="/enterprise/contact.html"><button class="button-brand">Contact Us to Get Started</button></a>
-      <a href="/enterprise/thoughtworks-support-services-general-terms/" class="text-center default-link-text">Terms and Conditions</a>
-    <script src="/assets/javascripts/marketo_popover.js" onload="new MarketoForm().init(7582)"></script>
-    <div class="page-bottom-margin"></div>
+
+      <% link_to '/enterprise/contact/index.html' do %>
+          <button class="button-brand">Contact Us to Get Started</button>
+      <% end %>
+      <%= link_to 'Terms and Conditions', '/enterprise/thoughtworks-support-services-general-terms/index.html', :class => 'text-center default-link-text' %>
+
+      <script src="/assets/javascripts/marketo_popover.js" onload="new MarketoForm().init(7582)"></script>
+      <div class="page-bottom-margin"></div>
   </div>
 </div>
